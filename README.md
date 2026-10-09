@@ -20,7 +20,7 @@ lattice estimator.
 | `run.py` | runs one instance under one cost model; writes `results/*.json`, `logs/*.log` |
 | `sensitivity.py` | sensitivity to the assumptions (Epoque noise, approximate moduli, LWR model, sample count, EVOLVE SIS bound) |
 | `summarize.py` | builds `results/summary.csv` and `results/summary.md` |
-| `extra_checks.py` | Kyber512 calibration, circulant NTRU variant, Epoque under MATZOV, EVOLVE SIS curve under 0.265 beta, error-width scan for Abdolmaleki et al. (`afgkr_sigma`) |
+| `extra_checks.py` | Kyber512 calibration, circulant NTRU variant, Epoque under MATZOV, EVOLVE SIS curve under 0.265 beta, error-width scan for Abdolmaleki et al. (`afgkr_sigma`, `afgkr_sigma_full`) |
 | `make_figure.py` | draws `fig_models.pdf` (Fig. 1 of the paper) from the results |
 | `jobs.txt` | list of all (instance, cost model) runs |
 | `SOURCES.md` | exact source documents (ePrint ids, DOIs, SHA-256 of the PDFs) |
@@ -46,10 +46,10 @@ up to the full lattice dimension reaches the bound.
 ## Reproducing
 
 ```
-python -m venv venv && . venv/bin/activate && pip install passagemath-standard matplotlib
+python -m venv venv && . venv/bin/activate && pip install -r requirements.txt
 ./reproduce.sh
 ```
-A full run takes about 4 hours on two cores. The `afgkr_sigma` scan uses the primal uSVP attack only; the point log2(sigma) = 9 under MATZOV in its output is an optimiser artefact (beta = 782) and should be ignored.
+A full run takes about 4 hours on two cores. The `afgkr_sigma` scan varies secret and error together and uses the primal uSVP attack only; `afgkr_sigma_full` repeats two of its points with every attack. In the uSVP-only scan the point log2(sigma) = 9 under MATZOV is an artefact of the uSVP optimiser (beta = 782, reproducible); the full run at the same point gives 97.9 bits (BDD), in line with the neighbouring points.
 
 ## Paper
 

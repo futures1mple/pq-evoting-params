@@ -1,8 +1,10 @@
 # Source documents
 
-Parameters were read from the documents below. For files that were available
-locally, the SHA-256 of the exact PDF is given so that page references in
-`params.py` can be checked against the same version.
+Parameters were read from the documents below. Where the PDF was retained, its
+SHA-256 is given so that page references in `params.py` can be checked against
+the same version. For two publisher PDFs (Hough et al.; Farzaliyev et al. 2025)
+only the DOI is recorded; the versions used were the published versions of record
+as downloaded in October 2026.
 
 | Scheme | Document used for parameters | SHA-256 |
 |---|---|---|

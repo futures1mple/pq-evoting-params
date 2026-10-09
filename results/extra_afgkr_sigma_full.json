@@ -1,0 +1,82 @@
+[
+ {
+  "model": "core292",
+  "log2_sigma": 13,
+  "min_log2": 120.88799999999999,
+  "attack": "usvp",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 464.3158920518343,
+   "usvp": 120.88799999999999,
+   "bdd": 121.71110729845475,
+   "bdd_hybrid": 121.71110729845475,
+   "bdd_mitm_hybrid": 267.60247706419176,
+   "dual": 124.68400000001277,
+   "dual_hybrid": 233.01600000037098
+  }
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 13.5,
+  "min_log2": 130.524,
+  "attack": "usvp",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 495.7502092454869,
+   "usvp": 130.524,
+   "bdd": 131.3853749872288,
+   "bdd_hybrid": 131.3853749872288,
+   "bdd_mitm_hybrid": 294.8819246919401,
+   "dual": 134.61200000000224,
+   "dual_hybrid": 271.8520000000003
+  }
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 13,
+  "min_log2": 144.2887190092022,
+  "attack": "bdd",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 464.3158920518343,
+   "usvp": 146.91238624403303,
+   "bdd": 144.2887190092022,
+   "bdd_hybrid": 144.29029521062915,
+   "bdd_mitm_hybrid": 293.6152377005474,
+   "dual": 151.48202524600205,
+   "dual_hybrid": 254.14006583466804
+  }
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 13.5,
+  "min_log2": 153.15744083268473,
+  "attack": "bdd",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 495.7502092454869,
+   "usvp": 156.03907813641186,
+   "bdd": 153.15744083268473,
+   "bdd_hybrid": 153.158241054628,
+   "bdd_mitm_hybrid": 320.40231173973706,
+   "dual": 161.21014383020594,
+   "dual_hybrid": 290.9799700875928
+  }
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 9,
+  "min_log2": 97.92209913376179,
+  "attack": "bdd",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 305.41917398150696,
+   "usvp": 239.4035714809148,
+   "bdd": 97.92209913376179,
+   "bdd_hybrid": 97.92623913265253,
+   "bdd_mitm_hybrid": 121.90005079628872,
+   "dual": 102.00531285247017,
+   "dual_hybrid": 119.36075664594372
+  }
+ }
+]

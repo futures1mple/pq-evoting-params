@@ -44,6 +44,18 @@ def run(item):
                     r = LWE.primal_usvp(P, red_cost_model=M[mname])
                     out.append({"model": mname, "log2_sigma": ls, "usvp_log2": float(log2(r["rop"])), "beta": int(r["beta"])})
                     print(mname, ls, round(log2(r["rop"]), 1), r["beta"], flush=True)
+        if item == "afgkr_sigma_full":
+            # Same instance as afgkr_sigma, but every attack the estimator runs by default,
+            # at the two scan points that bracket 128 bits, plus a re-run of the point
+            # log2(sigma) = 9 under MATZOV that the uSVP scan reported as an outlier.
+            qA = 2**32 - 99
+            for mname, ls in [("core292", 13), ("core292", 13.5), ("matzov", 13), ("matzov", 13.5), ("matzov", 9)]:
+                P = LWE.Parameters(n=512, q=qA, Xs=ND.DiscreteGaussian(2**ls), Xe=ND.DiscreteGaussian(2**ls), m=1024)
+                r = LWE.estimate(P, red_cost_model=M[mname], quiet=True)
+                b = best(r)
+                out.append({"model": mname, "log2_sigma": ls, "min_log2": b[0], "attack": b[1],
+                            "all": {k: (log2(float(v["rop"])) if float(v["rop"]) > 0 else None) for k, v in r.items()}})
+                print(mname, ls, round(b[0], 1), b[1], flush=True)
     open(f"logs/extra_{item}.log", "w").write(buf.getvalue())
     json.dump(out, open(f"results/extra_{item}.json", "w"), indent=1, default=str)
     print(item, json.dumps(out, default=str)[:1500], flush=True)
