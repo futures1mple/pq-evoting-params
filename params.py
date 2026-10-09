@@ -233,3 +233,34 @@ add(id="fwk21_com_bind", scheme="Farzaliyev et al. 2021", role="correctness", co
     source="Thm 1 p.7; Sec. 4.2 p.11",
     assumptions=["delta_1 = delta_2 = 2^45 (text '245'), beta' ~ 2^45, bound 8 d beta' = 2^60 in l_inf",
                  "m = 16 ring columns given to the attacker (the matrix has many more; the estimator chooses the sub-dimension)"])
+
+# ---------------------------------------------------------------- Herranz, Martinez, Sanchez (ePrint 2021/488)
+add(id="hms21_n128", scheme="Herranz et al. 2021", role="privacy", component="RLWE (LPR) encryption, set 1",
+    kind="LWE", n=128, m=256, q=4099, Xs=("DG", 27.0), Xe=("DG", 27.0),
+    claimed="128", tool="not stated", source="Def. 4 p.5; Sec. 5 p.13 (ePrint 2021/488)",
+    assumptions=["sigma = 27 read as standard deviation; truncation at k*sigma (k = 14) ignored",
+                 "s, e, r, e1, e2 from the error distribution; 2 ring samples"])
+add(id="hms21_n512", scheme="Herranz et al. 2021", role="privacy", component="RLWE (LPR) encryption, set 2",
+    kind="LWE", n=512, m=1024, q=1048583, Xs=("DG", 6.0), Xe=("DG", 6.0),
+    claimed="128", tool="not stated", source="Def. 4 p.5; Sec. 5 p.13 (ePrint 2021/488)",
+    assumptions=["sigma = 6 read as standard deviation; truncation ignored", "2 ring samples"])
+
+# ---------------------------------------------------------------- de Perthuis, Peters (ePrint 2024/2087)
+add(id="dpp24_fv", scheme="de Perthuis and Peters 2024", role="privacy", component="FV (RLWE) layer of TREnc",
+    kind="LWE", n=2**14, m=2**15, q=2**255, Xs=("B", None), Xe=("B", None),
+    claimed="> 140 (LWE), > 128 overall", tool="LWE estimator [APS15]",
+    source="Sec. 6 p.26 (ePrint 2024/2087)",
+    assumptions=["p = 2^255 for 'p on 255 bits'", "binary secret and error read as uniform on {0,1}", "2 ring samples"])
+
+# ---------------------------------------------------------------- Abdolmaleki, Fauzi, Gu, Krips, Roustaeifar (ePrint 2026/1540)
+qA = 2**32 - 99
+add(id="afgkr26_rlwe", scheme="Abdolmaleki et al. 2026", role="privacy", component="RLWE encryption (shuffled ciphertexts)",
+    kind="LWE", n=512, m=1024, q=qA, Xs=("T", None), Xe=("T", None),
+    claimed="128", tool="lattice estimator (commit not stated)",
+    source="Sec. 6.1 p.17; Sec. 6.3 p.18; Table 2 p.21 (ePrint 2026/1540)",
+    assumptions=["q = 2^32 - 99 as in Table 2 (text: q ~ 2^32), d = 512", "chi not specified: uniform ternary assumed", "2 ring samples"])
+add(id="afgkr26_com_hide", scheme="Abdolmaleki et al. 2026", role="privacy", component="ABDLOP hiding (MLWE, Ajtai shuffle argument)",
+    kind="LWE", n=128*(25-9-5-1), m=128*(9+5+1), q=qA, Xs=("T", None), Xe=("T", None),
+    claimed="128 (parameters following LNP22)", tool="lattice estimator (commit not stated)",
+    source="Thm 2; Table 2 p.21 (ePrint 2026/1540)",
+    assumptions=["MLWE_{n+l+1, m2-n-l-1} with n = 9, l = 5, m2 = 25, d = 128", "s2 uniform ternary (nu = 1, as in LNP22)"])

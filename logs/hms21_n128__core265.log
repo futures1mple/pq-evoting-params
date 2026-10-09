@@ -1,0 +1,16 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# LWEParameters(n=128, q=4099, Xs=D(σ=27.00), Xe=D(σ=27.00), m=256, tag='hms21_n128')
+# model core265
+bkw                  :: rop: ≈2^119.7, m: ≈2^110.4, mem: ≈2^111.3, b: 9, t1: 2, t2: 8, ℓ: 8, #cod: 97, #top: 0, #test: 15, tag: coded-bkw
+usvp                 :: rop: ≈2^62.8, red: ≈2^62.8, δ: 1.005647, β: 237, d: 382, tag: usvp
+bdd                  :: rop: ≈2^63.6, red: ≈2^61.0, svp: ≈2^63.3, β: 230, η: 238, d: 384, tag: bdd
+dual                 :: rop: ≈2^70.2, mem: ≈2^63.5, m: 256, β: 255, d: 384, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^223.2, red: ≈2^218.0, guess: ≈2^223.1, β: 255, p: 3, ζ: 0, t: 0, β': 255, N: ≈2^203.3, m: 128
+arora-gb             :: rop: ≈2^inf, dreg: ≈2^inf, tag: arora-gb
+bkw                  :: rop: ≈2^119.7, m: ≈2^110.4, mem: ≈2^111.3, b: 9, t1: 2, t2: 8, ℓ: 8, #cod: 97, #top: 0, #test: 15, tag: coded-bkw
+usvp                 :: rop: ≈2^62.8, red: ≈2^62.8, δ: 1.005647, β: 237, d: 382, tag: usvp
+bdd                  :: rop: ≈2^63.6, red: ≈2^61.0, svp: ≈2^63.3, β: 230, η: 238, d: 384, tag: bdd
+bdd_hybrid           :: rop: ≈2^63.6, red: ≈2^61.0, svp: ≈2^63.3, β: 230, η: 238, ζ: 0, |S|: 1, d: 384, prob: 1.0, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^130.8, red: ≈2^130.8, svp: ≈2^85.1, β: 237, η: 2, ζ: 0, |S|: 1, d: 384, prob: ≈2^-65.8, ↻: ≈2^68.0, tag: hybrid
+dual                 :: rop: ≈2^70.2, mem: ≈2^63.5, m: 256, β: 255, d: 384, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^223.2, red: ≈2^218.0, guess: ≈2^223.1, β: 255, p: 3, ζ: 0, t: 0, β': 255, N: ≈2^203.3, m: 128

@@ -1,0 +1,144 @@
+{
+ "id": "afgkr26_rlwe",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=512, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1024, tag='afgkr26_rlwe')",
+ "problem": {
+  "id": "afgkr26_rlwe",
+  "scheme": "Abdolmaleki et al. 2026",
+  "role": "privacy",
+  "component": "RLWE encryption (shuffled ciphertexts)",
+  "kind": "LWE",
+  "n": 512,
+  "m": 1024,
+  "q": 4294967197,
+  "Xs": [
+   "T",
+   null
+  ],
+  "Xe": [
+   "T",
+   null
+  ],
+  "claimed": "128",
+  "tool": "lattice estimator (commit not stated)",
+  "source": "Sec. 6.1 p.17; Sec. 6.3 p.18; Table 2 p.21 (ePrint 2026/1540)",
+  "assumptions": [
+   "q = 2^32 - 99 as in Table 2 (text: q ~ 2^32), d = 512",
+   "chi not specified: uniform ternary assumed",
+   "2 ring samples"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 5.028530178909171e+36,
+   "rop_log2": 121.91954818307798,
+   "m": 1.6090889434700044e+32,
+   "mem": 4.436776793992563e+30,
+   "mem_log2": 101.80735482229423,
+   "b": 3.0,
+   "t1": 12.0,
+   "t2": 44.0,
+   "ell": 2.0,
+   "#cod": 440.0,
+   "#top": 3.0,
+   "#test": 33.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=512, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=3.06), m=40626908683441025881078474077110272, tag='afgkr26_rlwe')"
+  },
+  "usvp": {
+   "rop": 4791347.432541842,
+   "rop_log2": 22.192,
+   "red": 4791347.432541842,
+   "red_log2": 22.192,
+   "delta": 1.0104872890907912,
+   "beta": 76.0,
+   "d": 1030.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=512, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1024, tag='afgkr26_rlwe')"
+  },
+  "bdd": {
+   "rop": 8895361.069937821,
+   "rop_log2": 23.084621736169776,
+   "red": 5866221.030294253,
+   "red_log2": 22.483999999999998,
+   "svp": 3029140.039643569,
+   "svp_log2": 21.530476845981436,
+   "beta": 77.0,
+   "eta": 71.0,
+   "d": 1018.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=512, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1024, tag='afgkr26_rlwe')"
+  },
+  "bdd_hybrid": {
+   "rop": 8951128.069937821,
+   "rop_log2": 23.093638079449672,
+   "red": 5866221.030294253,
+   "red_log2": 22.483999999999998,
+   "svp": 3084907.039643569,
+   "svp_log2": 21.556795585290153,
+   "beta": 77.0,
+   "eta": 71.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 1047.0,
+   "prob": 0.9999604112528421,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=512, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1024, tag='afgkr26_rlwe')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 33315227694.958,
+   "rop_log2": 34.95546270270072,
+   "red": 28069867629.958,
+   "red_log2": 34.70830320937338,
+   "svp": 5245360065.0,
+   "svp_log2": 32.288394663235,
+   "beta": 77.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 1047.0,
+   "prob": 0.0009620339604286384,
+   "repetitions": 4785.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=512, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1024, tag='afgkr26_rlwe')"
+  },
+  "dual": {
+   "rop": 13224911.51739557,
+   "rop_log2": 23.65675473408644,
+   "mem": 9334133.0,
+   "mem_log2": 23.154084593415753,
+   "m": 546.0,
+   "beta": 81.0,
+   "d": 1058.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 15866380.971517697,
+   "rop_log2": 23.919469759627457,
+   "problem": "LWEParameters(n=512, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1024, tag='afgkr26_rlwe')",
+   "red": 13181397.51739557,
+   "red_log2": 23.651999999999997,
+   "guess": 2684983.4541221256,
+   "guess_log2": 21.356481767132813,
+   "beta": 81.0,
+   "p": 3.0,
+   "zeta": 0.0,
+   "t": 0.0,
+   "beta_": 81.0,
+   "N": 2213.5735558309293,
+   "m": 512.0
+  }
+ },
+ "min_rop_log2": 22.192,
+ "best_attack": "usvp",
+ "seconds": 179.5,
+ "trivial_check": null
+}

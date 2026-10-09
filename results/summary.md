@@ -37,3 +37,8 @@
 | Farzaliyev et al. 2021 | privacy | RLWE encryption | main | 180 (PQ) | 193.3 | 176.0 | 219.3 | dual_hybrid |  |
 | Farzaliyev et al. 2021 | privacy | BDLOP hiding (MLWE_lambda, lambda=1) | main | root Hermite factor 1.0029 | 196.5 | 178.9 | 222.3 | dual_hybrid |  |
 | Farzaliyev et al. 2021 | correctness | MSIS_{mu, 8 d beta'} (l_inf) | main | 128-bit soundness; root Hermite factor 1.003 | inf | inf | inf | lattice | beyond BKZ (estimator returns inf: no block size up to the lattice dimension reaches the bound) |
+| Herranz et al. 2021 | privacy | RLWE (LPR) encryption, set 1 | main | 128 | 69.2 | 62.8 | 91.9 | bdd |  |
+| Herranz et al. 2021 | privacy | RLWE (LPR) encryption, set 2 | main | 128 | 80.3 | 72.9 | 105.7 | bdd |  |
+| de Perthuis and Peters 2024 | privacy | FV (RLWE) layer of TREnc | main | > 140 (LWE), > 128 overall | 196.2 | 178.1 | 224.1 | dual_hybrid |  |
+| Abdolmaleki et al. 2026 | privacy | RLWE encryption (shuffled ciphertexts) | main | 128 | 22.2 | 20.1 | 52.4 | bdd |  |
+| Abdolmaleki et al. 2026 | privacy | ABDLOP hiding (MLWE, Ajtai shuffle argument) | main | 128 (parameters following LNP22) | 98.4 | 89.3 | 125.5 | dual_hybrid |  |

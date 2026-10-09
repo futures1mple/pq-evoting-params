@@ -1,0 +1,143 @@
+{
+ "id": "afgkr26_com_hide",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=1280, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1920, tag='afgkr26_com_hide')",
+ "problem": {
+  "id": "afgkr26_com_hide",
+  "scheme": "Abdolmaleki et al. 2026",
+  "role": "privacy",
+  "component": "ABDLOP hiding (MLWE, Ajtai shuffle argument)",
+  "kind": "LWE",
+  "n": 1280,
+  "m": 1920,
+  "q": 4294967197,
+  "Xs": [
+   "T",
+   null
+  ],
+  "Xe": [
+   "T",
+   null
+  ],
+  "claimed": "128 (parameters following LNP22)",
+  "tool": "lattice estimator (commit not stated)",
+  "source": "Thm 2; Table 2 p.21 (ePrint 2026/1540)",
+  "assumptions": [
+   "MLWE_{n+l+1, m2-n-l-1} with n = 9, l = 5, m2 = 25, d = 128",
+   "s2 uniform ternary (nu = 1, as in LNP22)"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 5.8038143872367916e+82,
+   "rop_log2": 274.93510516183363,
+   "m": 2.4334028838551516e+78,
+   "mem": 4.863266851171687e+78,
+   "mem_log2": 261.3923171567431,
+   "b": 8.0,
+   "t1": 0.0,
+   "t2": 42.0,
+   "ell": 7.0,
+   "#cod": 1171.0,
+   "#top": 0.0,
+   "#test": 111.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=1280, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=4.62), m=2433402883855151623216509437232271195668553333252604431998314420216114280660992, tag='afgkr26_com_hide')"
+  },
+  "usvp": {
+   "rop": 7.695874369987064e+29,
+   "rop_log2": 99.27999999999999,
+   "red": 7.695874369987064e+29,
+   "red_log2": 99.27999999999999,
+   "delta": 1.0044517371368327,
+   "beta": 340.0,
+   "d": 2435.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=1280, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1920, tag='afgkr26_com_hide')"
+  },
+  "bdd": {
+   "rop": 1.0946573956617426e+30,
+   "rop_log2": 99.7883222544197,
+   "red": 9.422339062515169e+29,
+   "red_log2": 99.57199999999999,
+   "svp": 1.524234894102256e+29,
+   "svp_log2": 96.94399999999999,
+   "beta": 341.0,
+   "eta": 331.0,
+   "d": 2513.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=1280, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1920, tag='afgkr26_com_hide')"
+  },
+  "bdd_hybrid": {
+   "rop": 1.0946573956617426e+30,
+   "rop_log2": 99.7883222544197,
+   "red": 9.422339062515169e+29,
+   "red_log2": 99.57199999999999,
+   "svp": 1.524234894102256e+29,
+   "svp_log2": 96.94399999999999,
+   "beta": 341.0,
+   "eta": 331.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 2531.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1280, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1920, tag='afgkr26_com_hide')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 2.945943444008849e+53,
+   "rop_log2": 177.6209187629236,
+   "red": 1.951103769870671e+48,
+   "red_log2": 160.4168390646247,
+   "svp": 2.945923932971151e+53,
+   "svp_log2": 177.62090920789612,
+   "beta": 341.0,
+   "eta": 2.0,
+   "zeta": 119.0,
+   "|S|": 5.989780894835199e+56,
+   "d": 2411.0,
+   "prob": 2.2239450101540236e-18,
+   "repetitions": 2.0707212475856814e+18,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1280, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1920, tag='afgkr26_com_hide')"
+  },
+  "dual": {
+   "rop": 2.5921642833455137e+30,
+   "rop_log2": 101.03200000128523,
+   "mem": 1.4198143748948152e+24,
+   "mem_log2": 80.23197660285487,
+   "m": 1264.0,
+   "beta": 346.0,
+   "d": 2544.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 4.193310003748817e+29,
+   "rop_log2": 98.4040042416695,
+   "problem": "LWEParameters(n=1280, q=4294967197, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=1920, tag='afgkr26_com_hide')",
+   "red": 4.193297675010937e+29,
+   "red_log2": 98.404,
+   "guess": 1.2328737880294827e+24,
+   "guess_log2": 80.02829939276828,
+   "beta": 337.0,
+   "p": 4.0,
+   "zeta": 0.0,
+   "t": 30.0,
+   "beta_": 337.0,
+   "N": 7.95053831761172e+20,
+   "m": 1280.0
+  }
+ },
+ "min_rop_log2": 98.4040042416695,
+ "best_attack": "dual_hybrid",
+ "seconds": 223.6,
+ "trivial_check": null
+}

@@ -1,0 +1,16 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# LWEParameters(n=16384, q=57896044618658097711785492504343953926634992332820282019728792003956564819968, Xs=D(σ=0.50, μ=0.50), Xe=D(σ=0.50, μ=0.50), m=32768, tag='dpp24_fv')
+# model core292
+Algorithm <estimator.lwe_bkw.CodedBKW object at 0x7fd103ea86e0> on LWEParameters(n=16384, q=57896044618658097711785492504343953926634992332820282019728792003956564819968, Xs=D(σ=0.50, μ=0.50), Xe=D(σ=0.50, μ=0.50), m=32768, tag='dpp24_fv') failed with Amplifying for μ≠0 not implemented.
+arora-gb             :: rop: ≈2^inf, dreg: 636, mem: ≈2^inf, t: 0, m: ≈2^2454.0, tag: arora-gb, ↻: ≈2^2439.0, ζ: ≈2^11.3
+usvp                 :: rop: ≈2^197.7, red: ≈2^197.7, δ: 1.002734, β: 677, d: 31871, tag: usvp
+bdd                  :: rop: ≈2^197.8, red: ≈2^197.7, svp: ≈2^193.3, β: 677, η: 661, d: 32428, tag: bdd
+dual                 :: rop: ≈2^198.0, mem: ≈2^150.1, m: ≈2^14.0, β: 678, d: 32587, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^196.2, red: ≈2^196.2, guess: ≈2^165.0, β: 672, p: 2, ζ: 10, t: 130, β': 672, N: ≈2^139.2, m: ≈2^14.0
+arora-gb             :: rop: ≈2^inf, dreg: 636, mem: ≈2^inf, t: 0, m: ≈2^2454.0, tag: arora-gb, ↻: ≈2^2439.0, ζ: ≈2^11.3
+usvp                 :: rop: ≈2^197.7, red: ≈2^197.7, δ: 1.002734, β: 677, d: 31871, tag: usvp
+bdd                  :: rop: ≈2^197.8, red: ≈2^197.7, svp: ≈2^193.3, β: 677, η: 661, d: 32428, tag: bdd
+bdd_hybrid           :: rop: ≈2^197.8, red: ≈2^197.7, svp: ≈2^193.3, β: 677, η: 661, ζ: 0, |S|: 1, d: 32569, prob: 1.0, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^255.3, red: ≈2^250.4, svp: ≈2^255.2, β: 677, η: 2, ζ: 345, |S|: ≈2^345.0, d: 32225, prob: ≈2^-50.5, ↻: ≈2^52.7, tag: hybrid
+dual                 :: rop: ≈2^198.0, mem: ≈2^150.1, m: ≈2^14.0, β: 678, d: 32587, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^196.2, red: ≈2^196.2, guess: ≈2^165.0, β: 672, p: 2, ζ: 10, t: 130, β': 672, N: ≈2^139.2, m: ≈2^14.0
