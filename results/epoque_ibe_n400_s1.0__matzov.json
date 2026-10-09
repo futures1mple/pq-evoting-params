@@ -1,0 +1,143 @@
+{
+ "id": "epoque_ibe_n400_s1.0",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1181.55), Xe=D(\u03c3=1.00), m=4801, tag='epoque_ibe_n400_s1.0')",
+ "problem": {
+  "id": "epoque_ibe_n400_s1.0",
+  "scheme": "Epoque",
+  "role": "privacy",
+  "component": "ABB-type IBE, n=400",
+  "kind": "LWE",
+  "n": 400,
+  "m": 4801,
+  "q": 4093,
+  "Xs": [
+   "U",
+   null
+  ],
+  "Xe": [
+   "DG",
+   1.0
+  ],
+  "claimed": "'higher' (no bits)",
+  "tool": "not stated",
+  "source": "Table 2, p.11; Sec. 5.1, p.8",
+  "variant": "sigma=1.0",
+  "assumptions": [
+   "noise distribution not given; sigma is an assumption (sensitivity: 1.0 and 3.2)",
+   "uniform secret s in Z_q^n; m+1 samples (y and c0); R^T y part not counted"
+  ]
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 3.489187032244742e+40,
+   "rop_log2": 134.6800147284409,
+   "m": 1.056127380811459e+37,
+   "mem": 2.111239142384838e+37,
+   "mem_log2": 123.98942951443085,
+   "b": 10.0,
+   "t1": 0.0,
+   "t2": 16.0,
+   "ell": 9.0,
+   "#cod": 347.0,
+   "#top": 1.0,
+   "#test": 52.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=3.46), m=10561273808114589773570007581774053376, tag='epoque_ibe_n400_s1.0')"
+  },
+  "usvp": {
+   "rop": 8.710435962798837e+31,
+   "rop_log2": 106.10251586993371,
+   "red": 8.710435962798837e+31,
+   "red_log2": 106.10251586993371,
+   "delta": 1.005178432109221,
+   "beta": 271.0,
+   "d": 767.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "bdd": {
+   "rop": 1.0605259581033597e+31,
+   "rop_log2": 103.06455087512414,
+   "red": 5.069986817800542e+30,
+   "red_log2": 101.99982484278074,
+   "svp": 5.535272763233056e+30,
+   "svp_log2": 102.12649725747916,
+   "beta": 256.0,
+   "eta": 288.0,
+   "d": 767.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "bdd_hybrid": {
+   "rop": 1.0813615203682936e+31,
+   "rop_log2": 103.09261986647563,
+   "red": 5.27834244044988e+30,
+   "red_log2": 102.05792779734432,
+   "svp": 5.535272763233056e+30,
+   "svp_log2": 102.12649725747916,
+   "beta": 256.0,
+   "eta": 288.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 788.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 3.3252350242401127e+56,
+   "rop_log2": 187.76142962613255,
+   "red": 3.3252350242401127e+56,
+   "red_log2": 187.76142962613255,
+   "svp": 2.2950047498284647e+30,
+   "svp_log2": 100.85633998611917,
+   "beta": 271.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 803.0,
+   "prob": 1.2938775759303942e-24,
+   "repetitions": 3.559200863865834e+24,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "dual": {
+   "rop": 1.2811188798285362e+33,
+   "rop_log2": 109.98103148626106,
+   "mem": 4.381093338815008e+20,
+   "mem_log2": 68.56985284922871,
+   "m": 413.0,
+   "beta": 281.0,
+   "d": 813.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 1.3296583387582024e+31,
+   "rop_log2": 103.39082652836116,
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')",
+   "red": 9.68558361283502e+30,
+   "red_log2": 102.93368182884903,
+   "guess": 3.610999774747003e+30,
+   "guess_log2": 101.51024117691257,
+   "beta": 256.0,
+   "p": 4.0,
+   "zeta": 10.0,
+   "t": 30.0,
+   "beta_": 267.0,
+   "N": 2.961295905163933e+16,
+   "m": 400.0
+  }
+ },
+ "min_rop_log2": 103.06455087512414,
+ "best_attack": "bdd",
+ "seconds": 22.9,
+ "trivial_check": null
+}

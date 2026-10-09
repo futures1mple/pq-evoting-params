@@ -1,0 +1,143 @@
+{
+ "id": "hough_rlwe",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')",
+ "problem": {
+  "id": "hough_rlwe",
+  "scheme": "Hough et al.",
+  "role": "privacy",
+  "component": "encryption randomness (RLWE, h treated as uniform)",
+  "kind": "LWE",
+  "n": 2048,
+  "m": 2048,
+  "q": 576460752303423488,
+  "Xs": [
+   "T",
+   null
+  ],
+  "Xe": [
+   "T",
+   null
+  ],
+  "claimed": "128",
+  "tool": "estimator [APS15], cost 0.292b+16.4+log(8d)",
+  "source": "Table 2 and p.29; Fig. 2 p.9",
+  "assumptions": [
+   "q = 2^59 for 'q ~ 2^59'",
+   "s,e uniform in S_1 (ternary)"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 8.077979653851106e+112,
+   "rop_log2": 375.06994113968886,
+   "m": 1.2843595900349798e+108,
+   "mem": 2.56871844990888e+108,
+   "mem_log2": 360.12928301694495,
+   "b": 6.0,
+   "t1": 0.0,
+   "t2": 70.0,
+   "ell": 5.0,
+   "#cod": 1910.0,
+   "#top": 0.0,
+   "#test": 138.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=5.54), m=1284359590034979830298135640988002575361604302959449306921739562535170048819219595154132695698136389602246656, tag='hough_rlwe')"
+  },
+  "usvp": {
+   "rop": 6.137817384777891e+24,
+   "rop_log2": 82.344,
+   "red": 6.137817384777891e+24,
+   "red_log2": 82.344,
+   "delta": 1.0050448822346278,
+   "beta": 282.0,
+   "d": 3903.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "bdd": {
+   "rop": 7.353465533608268e+24,
+   "rop_log2": 82.60469859933235,
+   "red": 6.137817384777891e+24,
+   "red_log2": 82.344,
+   "svp": 1.2156481488303766e+24,
+   "svp_log2": 80.008,
+   "beta": 282.0,
+   "eta": 273.0,
+   "d": 4051.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "bdd_hybrid": {
+   "rop": 7.353465533608268e+24,
+   "rop_log2": 82.60469859933235,
+   "red": 6.137817384777891e+24,
+   "red_log2": 82.344,
+   "svp": 1.2156481488303766e+24,
+   "svp_log2": 80.008,
+   "beta": 282.0,
+   "eta": 273.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 4080.0,
+   "prob": 0.9999999999999996,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 2.0022451489732565e+45,
+   "rop_log2": 150.4883828942329,
+   "red": 3.1922003646462347e+41,
+   "red_log2": 137.87360309833605,
+   "svp": 2.0019259289367918e+45,
+   "svp_log2": 150.48815286551755,
+   "beta": 283.0,
+   "eta": 2.0,
+   "zeta": 90.0,
+   "|S|": 8.727963566170333e+42,
+   "d": 3994.0,
+   "prob": 1.0841022934447999e-16,
+   "repetitions": 4.247911118566945e+16,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "dual": {
+   "rop": 1.1264612115705248e+25,
+   "rop_log2": 83.22000000902567,
+   "mem": 1.8079047718346732e+20,
+   "mem_log2": 67.29288058610872,
+   "m": 2046.0,
+   "beta": 285.0,
+   "d": 4094.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 4.3632208882772445e+24,
+   "rop_log2": 81.85166778936902,
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')",
+   "red": 4.0946090830108275e+24,
+   "red_log2": 81.75999999999999,
+   "guess": 2.6861180526641676e+23,
+   "guess_log2": 77.82986889382046,
+   "beta": 280.0,
+   "p": 4.0,
+   "zeta": 0.0,
+   "t": 30.0,
+   "beta_": 280.0,
+   "N": 8.996609545217469e+16,
+   "m": 2048.0
+  }
+ },
+ "min_rop_log2": 81.85166778936902,
+ "best_attack": "dual_hybrid",
+ "seconds": 102.8,
+ "trivial_check": null
+}

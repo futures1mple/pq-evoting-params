@@ -1,0 +1,17 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# LWEParameters(n=4096, q=9223372036854775808, Xs=D(σ=0.82), Xe=D(σ=0.82), m=8192, tag='fwk21_rlwe')
+# model core265
+arora-gb             :: rop: ≈2^inf, dreg: 299, mem: ≈2^inf, t: 1, m: ≈2^inf, tag: arora-gb, ↻: ≈2^inf, ζ: 1989
+bkw                  :: rop: ≈2^653.2, m: ≈2^635.7, mem: ≈2^636.7, b: 10, t1: 0, t2: 103, ℓ: 9, #cod: ≈2^11.9, #top: 0, #test: 258, tag: coded-bkw
+usvp                 :: rop: ≈2^178.3, red: ≈2^178.3, δ: 1.002746, β: 673, d: 7951, tag: usvp
+bdd                  :: rop: ≈2^179.1, red: ≈2^178.3, svp: ≈2^177.8, β: 673, η: 670, d: 8033, tag: bdd
+dual                 :: rop: ≈2^179.9, mem: ≈2^150.3, m: ≈2^12.0, β: 679, d: 8103, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^176.0, red: ≈2^176.0, guess: ≈2^167.9, β: 664, p: 3, ζ: 10, t: 80, β': 664, N: ≈2^136.9, m: ≈2^12.0
+arora-gb             :: rop: ≈2^inf, dreg: 299, mem: ≈2^inf, t: 1, m: ≈2^inf, tag: arora-gb, ↻: ≈2^inf, ζ: 1989
+bkw                  :: rop: ≈2^653.2, m: ≈2^635.7, mem: ≈2^636.7, b: 10, t1: 0, t2: 103, ℓ: 9, #cod: ≈2^11.9, #top: 0, #test: 258, tag: coded-bkw
+usvp                 :: rop: ≈2^178.3, red: ≈2^178.3, δ: 1.002746, β: 673, d: 7951, tag: usvp
+bdd                  :: rop: ≈2^179.1, red: ≈2^178.3, svp: ≈2^177.8, β: 673, η: 670, d: 8033, tag: bdd
+bdd_hybrid           :: rop: ≈2^179.1, red: ≈2^178.3, svp: ≈2^177.8, β: 673, η: 670, ζ: 0, |S|: 1, d: 8077, prob: 1.0, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^329.8, red: ≈2^277.9, svp: ≈2^329.8, β: 673, η: 2, ζ: 258, |S|: ≈2^408.9, d: 7819, prob: ≈2^-97.3, ↻: ≈2^99.5, tag: hybrid
+dual                 :: rop: ≈2^179.9, mem: ≈2^150.3, m: ≈2^12.0, β: 679, d: 8103, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^176.0, red: ≈2^176.0, guess: ≈2^167.9, β: 664, p: 3, ζ: 10, t: 80, β': 664, N: ≈2^136.9, m: ≈2^12.0

@@ -1,0 +1,143 @@
+{
+ "id": "hough_rlwe",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')",
+ "problem": {
+  "id": "hough_rlwe",
+  "scheme": "Hough et al.",
+  "role": "privacy",
+  "component": "encryption randomness (RLWE, h treated as uniform)",
+  "kind": "LWE",
+  "n": 2048,
+  "m": 2048,
+  "q": 576460752303423488,
+  "Xs": [
+   "T",
+   null
+  ],
+  "Xe": [
+   "T",
+   null
+  ],
+  "claimed": "128",
+  "tool": "estimator [APS15], cost 0.292b+16.4+log(8d)",
+  "source": "Table 2 and p.29; Fig. 2 p.9",
+  "assumptions": [
+   "q = 2^59 for 'q ~ 2^59'",
+   "s,e uniform in S_1 (ternary)"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 8.077979653851106e+112,
+   "rop_log2": 375.06994113968886,
+   "m": 1.2843595900349798e+108,
+   "mem": 2.56871844990888e+108,
+   "mem_log2": 360.12928301694495,
+   "b": 6.0,
+   "t1": 0.0,
+   "t2": 70.0,
+   "ell": 5.0,
+   "#cod": 1910.0,
+   "#top": 0.0,
+   "#test": 138.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=5.54), m=1284359590034979830298135640988002575361604302959449306921739562535170048819219595154132695698136389602246656, tag='hough_rlwe')"
+  },
+  "usvp": {
+   "rop": 5.236702895530701e+33,
+   "rop_log2": 112.01228588705295,
+   "red": 5.236702895530701e+33,
+   "red_log2": 112.01228588705295,
+   "delta": 1.0050448822346278,
+   "beta": 282.0,
+   "d": 3903.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "bdd": {
+   "rop": 2.818025502444977e+33,
+   "rop_log2": 111.1183117990286,
+   "red": 2.506989916936986e+33,
+   "red_log2": 110.94958332497605,
+   "svp": 3.110355855079915e+32,
+   "svp_log2": 107.93877868459376,
+   "beta": 278.0,
+   "eta": 309.0,
+   "d": 4010.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "bdd_hybrid": {
+   "rop": 2.852285010956174e+33,
+   "rop_log2": 111.13574527973688,
+   "red": 2.5412494254481825e+33,
+   "red_log2": 110.96916511517367,
+   "svp": 3.110355855079915e+32,
+   "svp_log2": 107.93877868459376,
+   "beta": 278.0,
+   "eta": 309.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 4061.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 2.7421501847967437e+46,
+   "rop_log2": 154.2639999530503,
+   "red": 8.536090835213085e+45,
+   "red_log2": 152.5803397983446,
+   "svp": 1.8885411012754348e+46,
+   "svp_log2": 153.7259645470405,
+   "beta": 283.0,
+   "eta": 2.0,
+   "zeta": 113.0,
+   "|S|": 8.216782349824292e+53,
+   "d": 3971.0,
+   "prob": 3.4855387002767135e-12,
+   "repetitions": 1321221934966.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')"
+  },
+  "dual": {
+   "rop": 1.5661528439275925e+34,
+   "rop_log2": 113.59278024110844,
+   "mem": 2.5588611903368877e+21,
+   "mem_log2": 71.1159918807528,
+   "m": 2042.0,
+   "beta": 284.0,
+   "d": 4090.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 4.307456114482173e+33,
+   "rop_log2": 111.73046322924417,
+   "problem": "LWEParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='hough_rlwe')",
+   "red": 4.303715140284216e+33,
+   "red_log2": 111.72920972142197,
+   "guess": 3.7409741979575205e+30,
+   "guess_log2": 101.56125686206666,
+   "beta": 277.0,
+   "p": 3.0,
+   "zeta": 10.0,
+   "t": 40.0,
+   "beta_": 297.0,
+   "N": 1.2144840149148713e+18,
+   "m": 2048.0
+  }
+ },
+ "min_rop_log2": 111.1183117990286,
+ "best_attack": "bdd",
+ "seconds": 114.4,
+ "trivial_check": null
+}

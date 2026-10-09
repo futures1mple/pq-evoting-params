@@ -1,0 +1,47 @@
+{
+ "id": "evolve_bind_honest",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=1792, q=2147483489, length_bound=247.8709341572747, m=3840, norm=2, tag='evolve_bind_honest')",
+ "problem": {
+  "id": "evolve_bind_honest",
+  "scheme": "EVOLVE",
+  "role": "correctness",
+  "component": "BDLOP binding, honest openings",
+  "kind": "SIS",
+  "n": 1792,
+  "m": 3840,
+  "q": 2147483489,
+  "beta": 247.8709341572747,
+  "norm": 2,
+  "claimed": "180 (time) / 141 (space), PQ",
+  "tool": "[APS15] + NewHope analysis",
+  "source": "Sec. 3.1 p.8, Table 2 p.13",
+  "variant": "honest",
+  "assumptions": [
+   "bound 2*||r||, ||r|| <= 2 sigma sqrt(N(2d+1)) (tail bound); lower bound on the relevant norm"
+  ]
+ },
+ "attacks": {
+  "lattice": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "red": Infinity,
+   "red_log2": Infinity,
+   "delta": 1.0007058752127787,
+   "beta": 3840.0,
+   "d": 3840.0,
+   "tag": "euclidean",
+   "problem": "SISParameters(n=1792, q=2147483489, length_bound=247.8709341572747, m=3840, norm=2, tag='evolve_bind_honest')"
+  }
+ },
+ "min_rop_log2": Infinity,
+ "best_attack": "lattice",
+ "seconds": 0.0,
+ "trivial_check": {
+  "beta_log2": 7.953445297804259,
+  "q_log2": 30.999999893182647,
+  "linear_algebra_norm_log2": 34.61119610385087,
+  "trivial": false
+ }
+}

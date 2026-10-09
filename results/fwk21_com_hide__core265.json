@@ -1,0 +1,143 @@
+{
+ "id": "fwk21_com_hide",
+ "model": "core265",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=4096, q=9223372036854775808, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=8192, tag='fwk21_com_hide')",
+ "problem": {
+  "id": "fwk21_com_hide",
+  "scheme": "Farzaliyev et al. 2021",
+  "role": "privacy",
+  "component": "BDLOP hiding (MLWE_lambda, lambda=1)",
+  "kind": "LWE",
+  "n": 4096,
+  "m": 8192,
+  "q": 9223372036854775808,
+  "Xs": [
+   "CB",
+   2
+  ],
+  "Xe": [
+   "CB",
+   2
+  ],
+  "claimed": "root Hermite factor 1.0029",
+  "tool": "pq-crystals security-estimates script",
+  "source": "Sec. 2.6 p.5; Sec. 4.2 p.11-12",
+  "assumptions": [
+   "chi_2 with Pr[0] = 6/16 read as centred binomial eta = 2",
+   "mu = lambda = 1: secret rank 1, mu+1 = 2 samples"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 2.778663913356107e+215,
+   "rop_log2": 715.6889317481474,
+   "m": 1.78762431029183e+210,
+   "mem": 3.57524862058366e+210,
+   "mem_log2": 699.4429434958487,
+   "b": 11.0,
+   "t1": 0.0,
+   "t2": 87.0,
+   "ell": 10.0,
+   "#cod": 3848.0,
+   "#top": 0.0,
+   "#test": 248.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=4096, q=9223372036854775808, Xs=D(\u03c3=1.00), Xe=D(\u03c3=8.77), m=1787624310291830059101430155510043726183123292365687991313868900652264443061898560640191361938086700221669993322216816175908947678773402094109843300963725132601970544485057343916698230218500298447666066019581952, tag='fwk21_com_hide')"
+  },
+  "usvp": {
+   "rop": 2.1153301890601444e+54,
+   "rop_log2": 180.465,
+   "red": 2.1153301890601444e+54,
+   "red_log2": 180.465,
+   "delta": 1.002722040381373,
+   "beta": 681.0,
+   "d": 8095.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=4096, q=9223372036854775808, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=8192, tag='fwk21_com_hide')"
+  },
+  "bdd": {
+   "rop": 4.230660378120289e+54,
+   "rop_log2": 181.465,
+   "red": 2.1153301890601444e+54,
+   "red_log2": 180.465,
+   "svp": 2.1153301890601444e+54,
+   "svp_log2": 180.465,
+   "beta": 681.0,
+   "eta": 680.0,
+   "d": 8067.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=4096, q=9223372036854775808, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=8192, tag='fwk21_com_hide')"
+  },
+  "bdd_hybrid": {
+   "rop": 4.230660378120289e+54,
+   "rop_log2": 181.465,
+   "red": 2.1153301890601444e+54,
+   "red_log2": 180.465,
+   "svp": 2.1153301890601444e+54,
+   "svp_log2": 180.465,
+   "beta": 681.0,
+   "eta": 680.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 8112.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=4096, q=9223372036854775808, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=8192, tag='fwk21_com_hide')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 1.7737576395697347e+119,
+   "rop_log2": 396.1362521895793,
+   "red": 3.951110631000746e+101,
+   "red_log2": 337.49699582593047,
+   "svp": 1.7737576395697347e+119,
+   "svp_log2": 396.1362521895793,
+   "beta": 681.0,
+   "eta": 2.0,
+   "zeta": 231.0,
+   "|S|": 2.33884608586751e+128,
+   "d": 7880.0,
+   "prob": 2.4654980409174196e-47,
+   "repetitions": 1.867845810282815e+47,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=4096, q=9223372036854775808, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=8192, tag='fwk21_com_hide')"
+  },
+  "dual": {
+   "rop": 6.368187773567138e+54,
+   "rop_log2": 182.05500000000015,
+   "mem": 5.618079553078739e+45,
+   "mem_log2": 151.97684132337739,
+   "m": 4042.0,
+   "beta": 687.0,
+   "d": 8138.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 7.02653320181386e+53,
+   "rop_log2": 178.87500208729062,
+   "problem": "LWEParameters(n=4096, q=9223372036854775808, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=8192, tag='fwk21_com_hide')",
+   "red": 7.026523035835748e+53,
+   "red_log2": 178.875,
+   "guess": 1.0165978112228887e+48,
+   "guess_log2": 159.47629758431367,
+   "beta": 675.0,
+   "p": 4.0,
+   "zeta": 0.0,
+   "t": 70.0,
+   "beta_": 675.0,
+   "N": 5.7924400278447496e+41,
+   "m": 4096.0
+  }
+ },
+ "min_rop_log2": 178.87500208729062,
+ "best_attack": "dual_hybrid",
+ "seconds": 211.2,
+ "trivial_check": null
+}

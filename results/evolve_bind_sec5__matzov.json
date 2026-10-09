@@ -1,0 +1,51 @@
+{
+ "id": "evolve_bind_sec5",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=1792, q=2147483489, length_bound=40875146482.36802, m=3840, norm=2, tag='evolve_bind_sec5')",
+ "problem": {
+  "id": "evolve_bind_sec5",
+  "scheme": "EVOLVE",
+  "role": "correctness",
+  "component": "BDLOP binding at B_r from Sec. 5",
+  "kind": "SIS",
+  "n": 1792,
+  "m": 3840,
+  "q": 2147483489,
+  "beta": 40875146482.36802,
+  "norm": 2,
+  "claimed": "180 (time) / 141 (space), PQ",
+  "tool": "[APS15] + NewHope analysis",
+  "source": "Sec. 5 constraints (3),(4),(7),(8), p.13",
+  "variant": "sec5",
+  "assumptions": [
+   "B_r = max of the four consistency constraints with Table 2 values; SIS bound 2B_r"
+  ]
+ },
+ "attacks": {
+  "large_norm": {
+   "rop": 34799987227791.695,
+   "rop_log2": 44.98415201011532,
+   "red": 34772780183520.0,
+   "red_log2": 44.98302365281952,
+   "sieve": 27207044271.695312,
+   "beta": 40.0,
+   "eta": 40.0,
+   "ell": 1391.0,
+   "d": 3840.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "large_norm",
+   "problem": "SISParameters(n=1792, q=2147483489, length_bound=40875146482.36802, m=3840, norm=2, tag='evolve_bind_sec5')"
+  }
+ },
+ "min_rop_log2": 44.98415201011532,
+ "best_attack": "large_norm",
+ "seconds": 1.1,
+ "trivial_check": {
+  "beta_log2": 35.25050484961296,
+  "q_log2": 30.999999893182647,
+  "linear_algebra_norm_log2": 34.61119610385087,
+  "trivial": true
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "id": "hough_com_bind",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=2048, q=576460752303423488, length_bound=2973052.7568760025, m=6144, norm=2, tag='hough_com_bind')",
+ "problem": {
+  "id": "hough_com_bind",
+  "scheme": "Hough et al.",
+  "role": "correctness",
+  "component": "BDLOP binding RSIS",
+  "kind": "SIS",
+  "n": 2048,
+  "m": 6144,
+  "q": 576460752303423488,
+  "beta": 2973052.7568760025,
+  "norm": 2,
+  "claimed": ">=128 (delta < 1.0045)",
+  "tool": "MR09 root Hermite factor",
+  "source": "Lemma 3 p.11; p.30; Table 6 p.42",
+  "assumptions": [
+   "kappa = 14 (smallest with 2^k*C(d,k) > 2^128, Table 6)",
+   "k = 3, sigma_Com = kappa*B_Com*sqrt(k d)"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "lattice": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "red": Infinity,
+   "red_log2": Infinity,
+   "delta": 1.0004792748612463,
+   "beta": 6144.0,
+   "d": 6144.0,
+   "tag": "euclidean",
+   "problem": "SISParameters(n=2048, q=576460752303423488, length_bound=2973052.7568760025, m=6144, norm=2, tag='hough_com_bind')"
+  }
+ },
+ "min_rop_log2": Infinity,
+ "best_attack": "lattice",
+ "seconds": 0.0,
+ "trivial_check": {
+  "beta_log2": 21.503513633446985,
+  "q_log2": 59.0,
+  "linear_algebra_norm_log2": 62.70751874963942,
+  "trivial": false
+ }
+}

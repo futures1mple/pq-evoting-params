@@ -1,0 +1,146 @@
+{
+ "id": "epoque_ibe_n400_s3.2",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1181.55), Xe=D(\u03c3=3.20), m=4801, tag='epoque_ibe_n400_s3.2')",
+ "problem": {
+  "id": "epoque_ibe_n400_s3.2",
+  "scheme": "Epoque",
+  "role": "privacy",
+  "component": "ABB-type IBE, n=400",
+  "kind": "LWE",
+  "n": 400,
+  "m": 4801,
+  "q": 4093,
+  "Xs": [
+   "U",
+   null
+  ],
+  "Xe": [
+   "DG",
+   3.2
+  ],
+  "claimed": "'higher' (no bits)",
+  "tool": "not stated",
+  "source": "Table 2, p.11; Sec. 5.1, p.8",
+  "variant": "sigma=3.2",
+  "assumptions": [
+   "noise distribution not given; sigma is an assumption (sensitivity: 1.0 and 3.2)",
+   "uniform secret s in Z_q^n; m+1 samples (y and c0); R^T y part not counted"
+  ]
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "dreg": Infinity,
+   "tag": "arora-gb",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=3.20), Xe=D(\u03c3=3.20), m=4401, tag='epoque_ibe_n400_s3.2')"
+  },
+  "bkw": {
+   "rop": 8.488563107754642e+54,
+   "rop_log2": 182.46963748773607,
+   "m": 2.8384323109717155e+51,
+   "mem": 5.554892824018964e+51,
+   "mem_log2": 171.8920919158117,
+   "b": 14.0,
+   "t1": 0.0,
+   "t2": 15.0,
+   "ell": 13.0,
+   "#cod": 357.0,
+   "#top": 0.0,
+   "#test": 44.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=3.20), Xe=D(\u03c3=13.19), m=2838432310971715450268328611545429837088447516377088, tag='epoque_ibe_n400_s3.2')"
+  },
+  "usvp": {
+   "rop": 3.507504060091585e+34,
+   "rop_log2": 114.75599999999999,
+   "red": 3.507504060091585e+34,
+   "red_log2": 114.75599999999999,
+   "delta": 1.0040311208994162,
+   "beta": 393.0,
+   "d": 901.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=3.20), Xe=D(\u03c3=3.20), m=4401, tag='epoque_ibe_n400_s3.2')"
+  },
+  "bdd": {
+   "rop": 7.01500812018317e+34,
+   "rop_log2": 115.75599999999999,
+   "red": 3.507504060091585e+34,
+   "red_log2": 114.75599999999999,
+   "svp": 3.507504060091585e+34,
+   "svp_log2": 114.75599999999999,
+   "beta": 393.0,
+   "eta": 392.0,
+   "d": 898.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=3.20), Xe=D(\u03c3=3.20), m=4401, tag='epoque_ibe_n400_s3.2')"
+  },
+  "bdd_hybrid": {
+   "rop": 7.01500812018317e+34,
+   "rop_log2": 115.75599999999999,
+   "red": 3.507504060091585e+34,
+   "red_log2": 114.75599999999999,
+   "svp": 3.507504060091585e+34,
+   "svp_log2": 114.75599999999999,
+   "beta": 393.0,
+   "eta": 392.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 910.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=3.20), Xe=D(\u03c3=3.20), m=4401, tag='epoque_ibe_n400_s3.2')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 2.1982766065419393e+76,
+   "rop_log2": 253.60290814175704,
+   "red": 2.1982766065419393e+76,
+   "red_log2": 253.60290814175704,
+   "svp": 5.189995012663927e+47,
+   "svp_log2": 158.50635361192917,
+   "beta": 393.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 910.0,
+   "prob": 7.347871089878598e-42,
+   "repetitions": 6.267352991986387e+41,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=3.20), Xe=D(\u03c3=3.20), m=4401, tag='epoque_ibe_n400_s3.2')"
+  },
+  "dual": {
+   "rop": 2.0091546049425576e+36,
+   "rop_log2": 120.59600000002716,
+   "mem": 2.594787605473175e+28,
+   "mem_log2": 94.3896031094674,
+   "m": 526.0,
+   "beta": 413.0,
+   "d": 926.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 8.285500080053061e+36,
+   "rop_log2": 122.64000019139296,
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=3.20), Xe=D(\u03c3=3.20), m=4401, tag='epoque_ibe_n400_s3.2')",
+   "red": 8.285498980869703e+36,
+   "red_log2": 122.63999999999999,
+   "guess": 1.099183359153018e+30,
+   "guess_log2": 99.7942749146876,
+   "beta": 420.0,
+   "p": 3.0,
+   "zeta": 0.0,
+   "t": 0.0,
+   "beta_": 420.0,
+   "N": 8.184656708176447e+25,
+   "m": 400.0
+  }
+ },
+ "min_rop_log2": 114.75599999999999,
+ "best_attack": "usvp",
+ "seconds": 17.1,
+ "trivial_check": null
+}

@@ -1,0 +1,47 @@
+{
+ "id": "abgst21_com_bind",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=1024, q=4294967296, length_bound=165888000.0, m=3072, norm=2, tag='abgst21_com_bind')",
+ "problem": {
+  "id": "abgst21_com_bind",
+  "scheme": "Aranha et al. 2021",
+  "role": "correctness",
+  "component": "BDLOP binding SKS^2_{n,k,16 sigma_C sqrt(nu N)}",
+  "kind": "SIS",
+  "n": 1024,
+  "m": 3072,
+  "q": 4294967296,
+  "beta": 165888000.0,
+  "norm": 2,
+  "claimed": ">=100",
+  "tool": "LWE-estimator [APS15]",
+  "source": "Sec. 3.1 p.9; Table 2 p.26",
+  "assumptions": [
+   "sigma_C = 54000 ('~54000'), nu = 36, N = 1024"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "lattice": {
+   "rop": 5.292008854573544e+43,
+   "rop_log2": 145.24672355568825,
+   "red": 5.292008854573544e+43,
+   "red_log2": 145.24672355568825,
+   "delta": 1.0039479470818917,
+   "beta": 405.0,
+   "d": 2400.0,
+   "tag": "euclidean",
+   "problem": "SISParameters(n=1024, q=4294967296, length_bound=165888000.0, m=3072, norm=2, tag='abgst21_com_bind')"
+  }
+ },
+ "min_rop_log2": 145.24672355568825,
+ "best_attack": "lattice",
+ "seconds": 0.0,
+ "trivial_check": {
+  "beta_log2": 27.305634287546713,
+  "q_log2": 32.0,
+  "linear_algebra_norm_log2": 35.20751874963942,
+  "trivial": false
+ }
+}

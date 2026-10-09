@@ -1,0 +1,4 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# SISParameters(n=4096, q=9223372036854775808, length_bound=1152921504606846976, m=65536, norm=+Infinity, tag='fwk21_com_bind')
+# model core265
+lattice              :: rop: ≈2^inf, tag: infinity

@@ -1,0 +1,143 @@
+{
+ "id": "epoque_ibe_n400_s1.0",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1181.55), Xe=D(\u03c3=1.00), m=4801, tag='epoque_ibe_n400_s1.0')",
+ "problem": {
+  "id": "epoque_ibe_n400_s1.0",
+  "scheme": "Epoque",
+  "role": "privacy",
+  "component": "ABB-type IBE, n=400",
+  "kind": "LWE",
+  "n": 400,
+  "m": 4801,
+  "q": 4093,
+  "Xs": [
+   "U",
+   null
+  ],
+  "Xe": [
+   "DG",
+   1.0
+  ],
+  "claimed": "'higher' (no bits)",
+  "tool": "not stated",
+  "source": "Table 2, p.11; Sec. 5.1, p.8",
+  "variant": "sigma=1.0",
+  "assumptions": [
+   "noise distribution not given; sigma is an assumption (sensitivity: 1.0 and 3.2)",
+   "uniform secret s in Z_q^n; m+1 samples (y and c0); R^T y part not counted"
+  ]
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 3.489187032244742e+40,
+   "rop_log2": 134.6800147284409,
+   "m": 1.056127380811459e+37,
+   "mem": 2.111239142384838e+37,
+   "mem_log2": 123.98942951443085,
+   "b": 10.0,
+   "t1": 0.0,
+   "t2": 16.0,
+   "ell": 9.0,
+   "#cod": 347.0,
+   "#top": 1.0,
+   "#test": 52.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=3.46), m=10561273808114589773570007581774053376, tag='epoque_ibe_n400_s1.0')"
+  },
+  "usvp": {
+   "rop": 6.623775689480604e+23,
+   "rop_log2": 79.13199999999999,
+   "red": 6.623775689480604e+23,
+   "red_log2": 79.13199999999999,
+   "delta": 1.005178432109221,
+   "beta": 271.0,
+   "d": 767.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "bdd": {
+   "rop": 1.2033870276716767e+24,
+   "rop_log2": 79.99337498722878,
+   "red": 6.623775689480604e+23,
+   "red_log2": 79.13199999999999,
+   "svp": 5.4100945872361626e+23,
+   "svp_log2": 78.83999999999999,
+   "beta": 271.0,
+   "eta": 269.0,
+   "d": 780.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "bdd_hybrid": {
+   "rop": 1.2033870276716767e+24,
+   "rop_log2": 79.99337498722878,
+   "red": 6.623775689480604e+23,
+   "red_log2": 79.13199999999999,
+   "svp": 5.4100945872361626e+23,
+   "svp_log2": 78.83999999999999,
+   "beta": 271.0,
+   "eta": 269.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 803.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 2.357534815605288e+48,
+   "rop_log2": 160.6898276310845,
+   "red": 2.357534815605288e+48,
+   "red_log2": 160.6898276310845,
+   "svp": 2.2950047498284647e+30,
+   "svp_log2": 100.85633998611917,
+   "beta": 271.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 803.0,
+   "prob": 1.2938775759303942e-24,
+   "repetitions": 3.559200863865834e+24,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')"
+  },
+  "dual": {
+   "rop": 1.1264612327123473e+25,
+   "rop_log2": 83.22000003610268,
+   "mem": 1.8100189540766148e+20,
+   "mem_log2": 67.2945667026851,
+   "m": 416.0,
+   "beta": 285.0,
+   "d": 816.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 4.430951977700496e+23,
+   "rop_log2": 78.55196287350564,
+   "problem": "LWEParameters(n=400, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4401, tag='epoque_ibe_n400_s1.0')",
+   "red": 4.4187974978267144e+23,
+   "red_log2": 78.548,
+   "guess": 1.2154479873781604e+21,
+   "guess_log2": 70.04197815012537,
+   "beta": 269.0,
+   "p": 6.0,
+   "zeta": 0.0,
+   "t": 20.0,
+   "beta_": 269.0,
+   "N": 4.526995098805274e+16,
+   "m": 400.0
+  }
+ },
+ "min_rop_log2": 78.55196287350564,
+ "best_attack": "dual_hybrid",
+ "seconds": 20.7,
+ "trivial_check": null
+}

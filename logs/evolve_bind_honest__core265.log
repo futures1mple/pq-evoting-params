@@ -1,0 +1,4 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# SISParameters(n=1792, q=2147483489, length_bound=247.8709341572747, m=3840, norm=2, tag='evolve_bind_honest')
+# model core265
+lattice              :: rop: ≈2^inf, red: ≈2^inf, δ: 1.000706, β: 3840, d: 3840, tag: euclidean

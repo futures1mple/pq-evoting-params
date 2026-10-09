@@ -1,0 +1,13 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# NTRUParameters(n=2048, q=576460752303423488, Xs=D(σ=7.12), Xe=D(σ=7.12), m=2048, tag='hough_ntru', ntru_type='matrix')
+# model core292
+usvp                 :: rop: ≈2^96.7, red: ≈2^96.7, δ: 1.004533, β: 331, d: 4027, tag: usvp
+dsd                  :: rop: ≈2^44.1, red: ≈2^44.1, δ: 1.007428, β: 151, d: 4096, tag: dsd
+bdd                  :: rop: ≈2^96.8, red: ≈2^96.7, svp: ≈2^93.7, β: 331, η: 321, d: 4094, tag: bdd
+bdd_hybrid           :: rop: ≈2^96.8, red: ≈2^96.7, svp: ≈2^93.7, β: 331, η: 321, ζ: 0, |S|: 1, d: 4096, prob: 1.0, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^199.9, red: ≈2^199.9, svp: ≈2^127.3, β: 331, η: 2, ζ: 0, |S|: 1, d: 4096, prob: ≈2^-101.1, ↻: ≈2^103.3, tag: hybrid
+usvp                 :: rop: ≈2^96.7, red: ≈2^96.7, δ: 1.004533, β: 331, d: 4027, tag: usvp
+dsd                  :: rop: ≈2^44.1, red: ≈2^44.1, δ: 1.007428, β: 151, d: 4096, tag: dsd
+bdd                  :: rop: ≈2^96.8, red: ≈2^96.7, svp: ≈2^93.7, β: 331, η: 321, d: 4094, tag: bdd
+bdd_hybrid           :: rop: ≈2^96.8, red: ≈2^96.7, svp: ≈2^93.7, β: 331, η: 321, ζ: 0, |S|: 1, d: 4096, prob: 1.0, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^199.9, red: ≈2^199.9, svp: ≈2^127.3, β: 331, η: 2, ζ: 0, |S|: 1, d: 4096, prob: ≈2^-101.1, ↻: ≈2^103.3, tag: hybrid

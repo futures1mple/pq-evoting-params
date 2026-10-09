@@ -1,0 +1,145 @@
+{
+ "id": "evolve_hide",
+ "model": "core265",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2048, tag='evolve_hide')",
+ "problem": {
+  "id": "evolve_hide",
+  "scheme": "EVOLVE",
+  "role": "privacy",
+  "component": "BDLOP commitment, hiding (M-LWE)",
+  "kind": "LWE",
+  "n": 1792,
+  "m": 2048,
+  "q": 2147483489,
+  "Xs": [
+   "DG",
+   1.0
+  ],
+  "Xe": [
+   "DG",
+   1.0
+  ],
+  "claimed": "119 (time) / 93 (space), PQ",
+  "tool": "[APS15] + NewHope analysis",
+  "source": "Table 2 and Sec. 5, p.13; Sec. 3.1, p.8",
+  "assumptions": [
+   "translation R2: C in R^{(d+1)x(2d+1)}, secret rank d, d+1 samples"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "dreg": Infinity,
+   "tag": "arora-gb",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2048, tag='evolve_hide')"
+  },
+  "bkw": {
+   "rop": 7.055500077938309e+117,
+   "rop_log2": 391.48433544323973,
+   "m": 2.0682646402815858e+113,
+   "mem": 4.1364374050370413e+113,
+   "mem_log2": 377.4262634728939,
+   "b": 12.0,
+   "t1": 0.0,
+   "t2": 43.0,
+   "ell": 11.0,
+   "#cod": 1651.0,
+   "#top": 0.0,
+   "#test": 149.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=7.00), m=206826464028158582870752018851947198485933391053810302601400132692297952156873880944136391668150807408096739065856, tag='evolve_hide')"
+  },
+  "usvp": {
+   "rop": 2.9551589477840577e+45,
+   "rop_log2": 151.05,
+   "red": 2.9551589477840577e+45,
+   "red_log2": 151.05,
+   "delta": 1.003098728146979,
+   "beta": 570.0,
+   "d": 3472.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2048, tag='evolve_hide')"
+  },
+  "bdd": {
+   "rop": 4.9684144964952494e+45,
+   "rop_log2": 151.79954980723633,
+   "red": 3.5510255237391267e+45,
+   "red_log2": 151.315,
+   "svp": 1.4173889727561224e+45,
+   "svp_log2": 149.99,
+   "beta": 571.0,
+   "eta": 565.0,
+   "d": 3476.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2048, tag='evolve_hide')"
+  },
+  "bdd_hybrid": {
+   "rop": 4.9684144964952494e+45,
+   "rop_log2": 151.79954980723633,
+   "red": 3.5510255237391267e+45,
+   "red_log2": 151.315,
+   "svp": 1.4173889727561224e+45,
+   "svp_log2": 149.99,
+   "beta": 571.0,
+   "eta": 565.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 3531.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2048, tag='evolve_hide')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 3.769932299109813e+113,
+   "rop_log2": 377.2924133379103,
+   "red": 3.769932299109813e+113,
+   "red_log2": 377.2924133379103,
+   "svp": 1.323656182241357e+75,
+   "svp_log2": 249.5491355494295,
+   "beta": 571.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 3531.0,
+   "prob": 4.337764069521247e-68,
+   "repetitions": 1.0616460720733382e+68,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2048, tag='evolve_hide')"
+  },
+  "dual": {
+   "rop": 1.8548565737726067e+46,
+   "rop_log2": 153.70000000001687,
+   "mem": 9.82842032969063e+38,
+   "mem_log2": 129.5302271641314,
+   "m": 1759.0,
+   "beta": 580.0,
+   "d": 3551.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 5.665799942365004e+44,
+   "rop_log2": 148.6671158365458,
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2048, tag='evolve_hide')",
+   "red": 5.657496648954655e+44,
+   "red_log2": 148.66500000000002,
+   "guess": 8.303293410349353e+41,
+   "guess_log2": 139.25273556953556,
+   "beta": 561.0,
+   "p": 4.0,
+   "zeta": 0.0,
+   "t": 60.0,
+   "beta_": 561.0,
+   "N": 5.947780337316738e+34,
+   "m": 1792.0
+  }
+ },
+ "min_rop_log2": 148.6671158365458,
+ "best_attack": "dual_hybrid",
+ "seconds": 106.8,
+ "trivial_check": null
+}

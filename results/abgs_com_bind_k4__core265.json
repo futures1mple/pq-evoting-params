@@ -1,0 +1,47 @@
+{
+ "id": "abgs_com_bind_k4",
+ "model": "core265",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=4096, q=302231454903657293676544, length_bound=25165824.0, m=16384, norm=2, tag='abgs_com_bind_k4')",
+ "problem": {
+  "id": "abgs_com_bind_k4",
+  "scheme": "Aranha et al.",
+  "role": "correctness",
+  "component": "BDLOP binding SKS^2, k=4",
+  "kind": "SIS",
+  "n": 4096,
+  "m": 16384,
+  "q": 302231454903657293676544,
+  "beta": 25165824.0,
+  "norm": 2,
+  "claimed": "262 (SKS^2)",
+  "tool": "root Hermite factor 1.00225",
+  "source": "Thm 3 p.5; Table 5 p.23",
+  "variant": "k=4",
+  "assumptions": [
+   "beta = 16 sigma_C sqrt(nu N) with sigma_C = 2^12 (Table 5 gives '~2^12')"
+  ]
+ },
+ "attacks": {
+  "lattice": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "red": Infinity,
+   "red_log2": Infinity,
+   "delta": 1.00021515991705,
+   "beta": 15889.0,
+   "d": 16384.0,
+   "tag": "euclidean",
+   "problem": "SISParameters(n=4096, q=302231454903657293676544, length_bound=25165824.0, m=16384, norm=2, tag='abgs_com_bind_k4')"
+  }
+ },
+ "min_rop_log2": Infinity,
+ "best_attack": "lattice",
+ "seconds": 0.0,
+ "trivial_check": {
+  "beta_log2": 24.584962500721158,
+  "q_log2": 78.0,
+  "linear_algebra_norm_log2": 82.20751874963942,
+  "trivial": false
+ }
+}

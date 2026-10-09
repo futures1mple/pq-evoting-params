@@ -1,0 +1,143 @@
+{
+ "id": "epoque_ibe_n200_s1.0",
+ "model": "core265",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=200, q=4093, Xs=D(\u03c3=1181.55), Xe=D(\u03c3=1.00), m=2401, tag='epoque_ibe_n200_s1.0')",
+ "problem": {
+  "id": "epoque_ibe_n200_s1.0",
+  "scheme": "Epoque",
+  "role": "privacy",
+  "component": "ABB-type IBE, n=200",
+  "kind": "LWE",
+  "n": 200,
+  "m": 2401,
+  "q": 4093,
+  "Xs": [
+   "U",
+   null
+  ],
+  "Xe": [
+   "DG",
+   1.0
+  ],
+  "claimed": "'medium' (no bits)",
+  "tool": "not stated",
+  "source": "Table 2, p.11; Sec. 5.1, p.8",
+  "variant": "sigma=1.0",
+  "assumptions": [
+   "noise distribution not given; sigma is an assumption (sensitivity: 1.0 and 3.2)",
+   "uniform secret s in Z_q^n; m+1 samples (y and c0); R^T y part not counted"
+  ]
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 1.8933917601365295e+22,
+   "rop_log2": 74.00339103629767,
+   "m": 1.0902131972812485e+19,
+   "mem": 2.0676700083256267e+19,
+   "mem_log2": 64.16463975865774,
+   "b": 5.0,
+   "t1": 3.0,
+   "t2": 15.0,
+   "ell": 4.0,
+   "#cod": 164.0,
+   "#top": 0.0,
+   "#test": 23.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=200, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=2.65), m=10902131972812484608, tag='epoque_ibe_n200_s1.0')"
+  },
+  "usvp": {
+   "rop": 114042790.10007164,
+   "rop_log2": 26.765,
+   "red": 114042790.10007164,
+   "red_log2": 26.765,
+   "delta": 1.0092135441366261,
+   "beta": 101.0,
+   "d": 397.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=200, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2201, tag='epoque_ibe_n200_s1.0')"
+  },
+  "bdd": {
+   "rop": 193131248.2687698,
+   "rop_log2": 27.52500636758801,
+   "red": 114042790.10007164,
+   "red_log2": 26.765,
+   "svp": 79088458.16869816,
+   "svp_log2": 26.23696383352736,
+   "beta": 101.0,
+   "eta": 98.0,
+   "d": 426.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=200, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2201, tag='epoque_ibe_n200_s1.0')"
+  },
+  "bdd_hybrid": {
+   "rop": 193131248.2687698,
+   "rop_log2": 27.52500636758801,
+   "red": 114042790.10007164,
+   "red_log2": 26.765,
+   "svp": 79088458.16869816,
+   "svp_log2": 26.23696383352736,
+   "beta": 101.0,
+   "eta": 98.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 426.0,
+   "prob": 0.9999993532673953,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=200, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2201, tag='epoque_ibe_n200_s1.0')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 90653974566055.75,
+   "rop_log2": 46.36543550735,
+   "red": 90509946320131.75,
+   "red_log2": 46.36314157510451,
+   "svp": 144028245924.0,
+   "svp_log2": 37.067560815556185,
+   "beta": 101.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 426.0,
+   "prob": 5.802512378636205e-06,
+   "repetitions": 793649.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=200, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2201, tag='epoque_ibe_n200_s1.0')"
+  },
+  "dual": {
+   "rop": 720453506.7383467,
+   "rop_log2": 29.424330090592218,
+   "mem": 956993705.0,
+   "mem_log2": 29.833934193951105,
+   "m": 237.0,
+   "beta": 111.0,
+   "d": 437.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 1232966719.854875,
+   "rop_log2": 30.199486713136334,
+   "problem": "LWEParameters(n=200, q=4093, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=2201, tag='epoque_ibe_n200_s1.0')",
+   "red": 860142231.5145373,
+   "red_log2": 29.68,
+   "guess": 372824488.34033763,
+   "guess_log2": 28.473921383165315,
+   "beta": 112.0,
+   "p": 3.0,
+   "zeta": 0.0,
+   "t": 0.0,
+   "beta_": 112.0,
+   "N": 229210.9460472619,
+   "m": 200.0
+  }
+ },
+ "min_rop_log2": 26.765,
+ "best_attack": "usvp",
+ "seconds": 9.0,
+ "trivial_check": null
+}

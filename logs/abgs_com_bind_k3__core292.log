@@ -1,0 +1,4 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# SISParameters(n=4096, q=302231454903657293676544, length_bound=25165824.0, m=12288, norm=2, tag='abgs_com_bind_k3')
+# model core292
+lattice              :: rop: ≈2^inf, red: ≈2^inf, δ: 1.000268, β: 12288, d: 12288, tag: euclidean

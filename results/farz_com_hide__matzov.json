@@ -1,0 +1,151 @@
+{
+ "id": "farz_com_hide",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=4096, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=16384, tag='farz_com_hide')",
+ "problem": {
+  "id": "farz_com_hide",
+  "scheme": "Farzaliyev et al.",
+  "role": "privacy",
+  "component": "BDLOP hiding (MLWE_lambda, lambda=1)",
+  "kind": "LWE",
+  "n": 4096,
+  "m": 16384,
+  "q": 4611686018427387904,
+  "Xs": [
+   "T",
+   null
+  ],
+  "Xe": [
+   "T",
+   null
+  ],
+  "claimed": "192 (target)",
+  "tool": "LWE Estimator [APS15]",
+  "source": "Sec. 3.6.2 p.8; p.23",
+  "assumptions": [
+   "mu + l = 4 samples (l = 3 messages, representative)"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "dreg": 483.0,
+   "mem": Infinity,
+   "mem_log2": Infinity,
+   "t": 1.0,
+   "m": 7.250125358299979e+188,
+   "tag": "arora-gb",
+   "problem": "LWEParameters(n=3709, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=16384, tag='farz_com_hide')",
+   "repetitions": 4.4251253407592644e+184,
+   "zeta": 387.0
+  },
+  "bkw": {
+   "rop": 5.259024332194934e+193,
+   "rop_log2": 643.5269174850854,
+   "m": 2.5236278135498745e+188,
+   "mem": 5.047255627099749e+188,
+   "mem_log2": 626.8579809951276,
+   "b": 10.0,
+   "t1": 8.0,
+   "t2": 108.0,
+   "ell": 9.0,
+   "#cod": 3778.0,
+   "#top": 0.0,
+   "#test": 240.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=4096, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=6.32), m=252362781354987452202976182108513733714873555584351039861291090047986945818045891206114714676291981875573400454777217506427712320174956706904081684631241248053184214699645392517859175825408, tag='farz_com_hide')"
+  },
+  "usvp": {
+   "rop": 8.609992419052674e+67,
+   "rop_log2": 225.67519432480827,
+   "red": 8.609992419052674e+67,
+   "red_log2": 225.67519432480827,
+   "delta": 1.0027045486640178,
+   "beta": 687.0,
+   "d": 7941.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=4096, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=16384, tag='farz_com_hide')"
+  },
+  "bdd": {
+   "rop": 4.385585411128402e+67,
+   "rop_log2": 224.70195179153959,
+   "red": 3.989795793585491e+67,
+   "red_log2": 224.56549726552478,
+   "svp": 3.9578961754291066e+66,
+   "svp_log2": 221.23198803029288,
+   "beta": 683.0,
+   "eta": 716.0,
+   "d": 7975.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=4096, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=16384, tag='farz_com_hide')"
+  },
+  "bdd_hybrid": {
+   "rop": 4.4299043166797495e+67,
+   "rop_log2": 224.71645789520818,
+   "red": 4.0341146991368386e+67,
+   "red_log2": 224.58143446111745,
+   "svp": 3.9578961754291066e+66,
+   "svp_log2": 221.23198803029288,
+   "beta": 683.0,
+   "eta": 716.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 8056.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=4096, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=16384, tag='farz_com_hide')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 1.2812318334452771e+101,
+   "rop_log2": 335.8722691324491,
+   "red": 1.857071566924285e+98,
+   "red_log2": 326.4419827131887,
+   "svp": 1.2793747618783528e+101,
+   "svp_log2": 335.87017651235294,
+   "beta": 687.0,
+   "eta": 2.0,
+   "zeta": 264.0,
+   "|S|": 9.120338553828273e+125,
+   "d": 7809.0,
+   "prob": 2.0962555759954402e-30,
+   "repetitions": 2.1968553065392573e+30,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=4096, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=16384, tag='farz_com_hide')"
+  },
+  "dual": {
+   "rop": 7.021215521218881e+68,
+   "rop_log2": 228.70283126558144,
+   "mem": 1.1615934105592703e+46,
+   "mem_log2": 153.02479753922535,
+   "m": 4008.0,
+   "beta": 694.0,
+   "d": 8104.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 1.2317107618539212e+67,
+   "rop_log2": 222.8698458704426,
+   "problem": "LWEParameters(n=4096, q=4611686018427387904, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=16384, tag='farz_com_hide')",
+   "red": 1.1793827963405008e+67,
+   "red_log2": 222.80721441228343,
+   "guess": 5.232796551342049e+65,
+   "guess_log2": 218.3129083364199,
+   "beta": 673.0,
+   "p": 3.0,
+   "zeta": 20.0,
+   "t": 100.0,
+   "beta_": 672.0,
+   "N": 3.409729004750455e+41,
+   "m": 4096.0
+  }
+ },
+ "min_rop_log2": 222.8698458704426,
+ "best_attack": "dual_hybrid",
+ "seconds": 291.2,
+ "trivial_check": null
+}

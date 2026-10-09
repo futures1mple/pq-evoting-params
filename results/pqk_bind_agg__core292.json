@@ -1,0 +1,47 @@
+{
+ "id": "pqk_bind_agg",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=2916, q=18446744069414584321, length_bound=158971695.59390125, m=6318, norm=2, tag='pqk_bind_agg')",
+ "problem": {
+  "id": "pqk_bind_agg",
+  "scheme": "PQKryvos",
+  "role": "correctness",
+  "component": "binding of the aggregate, N_V=10^6",
+  "kind": "SIS",
+  "n": 2916,
+  "m": 6318,
+  "q": 18446744069414584321,
+  "beta": 158971695.59390125,
+  "norm": 2,
+  "claimed": "150 / 100",
+  "tool": "lattice-estimator 352ddaf",
+  "source": "Thm 2; Sec. 4.3",
+  "variant": "aggregate N_V=10^6",
+  "assumptions": [
+   "aggregate randomness l_inf <= N_V; difference l2 <= 2 N_V sqrt(m) (worst case)"
+  ]
+ },
+ "attacks": {
+  "lattice": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "red": Infinity,
+   "red_log2": Infinity,
+   "delta": 1.000468278613727,
+   "beta": 6318.0,
+   "d": 6318.0,
+   "tag": "euclidean",
+   "problem": "SISParameters(n=2916, q=18446744069414584321, length_bound=158971695.59390125, m=6318, norm=2, tag='pqk_bind_agg')"
+  }
+ },
+ "min_rop_log2": Infinity,
+ "best_attack": "lattice",
+ "seconds": 0.0,
+ "trivial_check": {
+  "beta_log2": 27.244194680197612,
+  "q_log2": 63.9999999996641,
+  "linear_algebra_norm_log2": 67.96240625146699,
+  "trivial": false
+ }
+}

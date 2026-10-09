@@ -1,0 +1,143 @@
+{
+ "id": "evolved_hide_k120",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=32512, tag='evolved_hide_k120')",
+ "problem": {
+  "id": "evolved_hide_k120",
+  "scheme": "EVOLVED",
+  "role": "privacy",
+  "component": "commitment hiding, instant run-off k=7",
+  "kind": "LWE",
+  "n": 1792,
+  "m": 32512,
+  "q": 2147483489,
+  "Xs": [
+   "DG",
+   1.0
+  ],
+  "Xe": [
+   "DG",
+   1.0
+  ],
+  "claimed": "4468.2 (primal, 0.265b)",
+  "tool": "estimator [APS15], version not stated; LWE dim 256*(7+m)",
+  "source": "Sec. 8.2, p.12-13, Fig. 8",
+  "variant": "instant run-off k=7",
+  "assumptions": [
+   "translation R2 with key (d+k)x(2d+k) (Sec. 3, p.5): secret rank d=7, d+k samples",
+   "k = message slots (k=120 for IRV with 7 candidates gives LWE dim 256*127 as in Fig. 8)"
+  ]
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 1.1702595516223523e+115,
+   "rop_log2": 382.248559452377,
+   "m": 1.4700096723422533e+110,
+   "mem": 2.508512068201672e+104,
+   "mem_log2": 346.8073537470667,
+   "b": 11.0,
+   "t1": 4.0,
+   "t2": 52.0,
+   "ell": 10.0,
+   "#cod": 1618.0,
+   "#top": 0.0,
+   "#test": 134.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=5.48), m=147000967234225326138419648118598676682701698188082484561201454775817864291581853419794990291553295654941884416, tag='evolved_hide_k120')"
+  },
+  "usvp": {
+   "rop": 1.268914845295973e+50,
+   "rop_log2": 166.44,
+   "red": 1.268914845295973e+50,
+   "red_log2": 166.44,
+   "delta": 1.003098728146979,
+   "beta": 570.0,
+   "d": 3472.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=32512, tag='evolved_hide_k120')"
+  },
+  "bdd": {
+   "rop": 2.1182937796336297e+50,
+   "rop_log2": 167.1793074305015,
+   "red": 1.5535786239527368e+50,
+   "red_log2": 166.732,
+   "svp": 5.647151556808931e+49,
+   "svp_log2": 165.272,
+   "beta": 571.0,
+   "eta": 565.0,
+   "d": 3476.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=32512, tag='evolved_hide_k120')"
+  },
+  "bdd_hybrid": {
+   "rop": 2.1182937796336297e+50,
+   "rop_log2": 167.1793074305015,
+   "red": 1.5535786239527368e+50,
+   "red_log2": 166.732,
+   "svp": 5.647151556808931e+49,
+   "svp_log2": 165.272,
+   "beta": 571.0,
+   "eta": 565.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 3531.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=32512, tag='evolved_hide_k120')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 1.6493506437765249e+118,
+   "rop_log2": 392.7094133379103,
+   "red": 1.6493506437765249e+118,
+   "red_log2": 392.7094133379103,
+   "svp": 1.323656182241357e+75,
+   "svp_log2": 249.5491355494295,
+   "beta": 571.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 3531.0,
+   "prob": 4.337764069521247e-68,
+   "repetitions": 1.0616460720733382e+68,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=32512, tag='evolved_hide_k120')"
+  },
+  "dual": {
+   "rop": 9.603732739486973e+50,
+   "rop_log2": 169.35999999999999,
+   "mem": 9.82842032969063e+38,
+   "mem_log2": 129.5302271641314,
+   "m": 1759.0,
+   "beta": 580.0,
+   "d": 3551.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 1.1765175952159136e+49,
+   "rop_log2": 163.00899954619334,
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=32512, tag='evolved_hide_k120')",
+   "red": 1.1184675114682823e+49,
+   "red_log2": 162.93599999999998,
+   "guess": 5.805008374763146e+47,
+   "guess_log2": 158.66791860814408,
+   "beta": 558.0,
+   "p": 5.0,
+   "zeta": 10.0,
+   "t": 50.0,
+   "beta_": 558.0,
+   "N": 6.33929183837498e+34,
+   "m": 1792.0
+  }
+ },
+ "min_rop_log2": 163.00899954619334,
+ "best_attack": "dual_hybrid",
+ "seconds": 113.4,
+ "trivial_check": null
+}

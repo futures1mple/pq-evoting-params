@@ -1,0 +1,6 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# SISParameters(n=1792, q=2147483489, length_bound=40875146482.36802, m=3840, norm=2, tag='evolve_bind_sec5')
+# model matzov
+Algorithm functools.partial(<estimator.sis_lattice.SISLattice object at 0x7fd3119fa120>, red_cost_model=<estimator.reduction.MATZOV object at 0x7fd311dd5e80>, red_shape_model=<function GSA at 0x7fd311997740>) on SISParameters(n=1792, q=2147483489, length_bound=40875146482.36802, m=3840, norm=2, tag='evolve_bind_sec5') failed with SIS trivially easy. Please set norm bound < q.
+large_norm :: rop: ≈2^45.0, red: ≈2^45.0, sieve: ≈2^34.7, β: 40, η: 40, ℓ: 1391, d: 3840, prob: 1, ↻: 1, tag: large_norm
+large_norm           :: rop: ≈2^45.0, red: ≈2^45.0, sieve: ≈2^34.7, β: 40, η: 40, ℓ: 1391, d: 3840, prob: 1, ↻: 1, tag: large_norm

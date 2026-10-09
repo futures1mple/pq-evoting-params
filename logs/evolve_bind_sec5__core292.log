@@ -1,0 +1,6 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# SISParameters(n=1792, q=2147483489, length_bound=40875146482.36802, m=3840, norm=2, tag='evolve_bind_sec5')
+# model core292
+Algorithm functools.partial(<estimator.sis_lattice.SISLattice object at 0x7fd53627a120>, red_cost_model=<estimator.reduction.ADPS16 object at 0x7fd5361082d0>, red_shape_model=<function GSA at 0x7fd5362176a0>) on SISParameters(n=1792, q=2147483489, length_bound=40875146482.36802, m=3840, norm=2, tag='evolve_bind_sec5') failed with SIS trivially easy. Please set norm bound < q.
+large_norm :: rop: ≈2^11.7, red: ≈2^11.7, sieve: ≈2^-332.2, β: 40, η: 40, ℓ: 1391, d: 3840, prob: 1, ↻: 1, tag: large_norm
+large_norm           :: rop: ≈2^11.7, red: ≈2^11.7, sieve: ≈2^-332.2, β: 40, η: 40, ℓ: 1391, d: 3840, prob: 1, ↻: 1, tag: large_norm

@@ -1,0 +1,152 @@
+{
+ "id": "abgst21_com_hide",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=1024, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='abgst21_com_hide')",
+ "problem": {
+  "id": "abgst21_com_hide",
+  "scheme": "Aranha et al. 2021",
+  "role": "privacy",
+  "component": "BDLOP hiding (DKS^inf_{n+1,k,1})",
+  "kind": "LWE",
+  "n": 1024,
+  "m": 2048,
+  "q": 4294967296,
+  "Xs": [
+   "T",
+   null
+  ],
+  "Xe": [
+   "T",
+   null
+  ],
+  "claimed": ">=100",
+  "tool": "LWE-estimator [APS15]",
+  "source": "Sec. 3.1 p.9; Table 2 p.26; p.25",
+  "assumptions": [
+   "p = 2^32 for 'p ~ 2^32'",
+   "k = 3, n = 1: secret rank k-(n+1) = 1, n+1 = 2 samples"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "dreg": 79.0,
+   "mem": 5.764241465021292e+199,
+   "mem_log2": 663.5908216540957,
+   "t": 1.0,
+   "m": 4.88570622920095e+245,
+   "tag": "arora-gb",
+   "problem": "LWEParameters(n=516, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='abgst21_com_hide')",
+   "repetitions": 2.3855987447270265e+242,
+   "zeta": 508.0
+  },
+  "bkw": {
+   "rop": 4.258475803399707e+63,
+   "rop_log2": 211.37180713033743,
+   "m": 1.7262034456030413e+59,
+   "mem": 3.4524059544626744e+59,
+   "mem_log2": 197.78135971352467,
+   "b": 6.0,
+   "t1": 5.0,
+   "t2": 50.0,
+   "ell": 5.0,
+   "#cod": 918.0,
+   "#top": 0.0,
+   "#test": 76.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=1024, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=3.92), m=172620344560304130932150265265452475613668556781416280489984, tag='abgst21_com_hide')"
+  },
+  "usvp": {
+   "rop": 3.619924944335376e+30,
+   "rop_log2": 101.51380263134435,
+   "red": 3.619924944335376e+30,
+   "red_log2": 101.51380263134435,
+   "delta": 1.005485433707273,
+   "beta": 248.0,
+   "d": 1936.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=1024, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='abgst21_com_hide')"
+  },
+  "bdd": {
+   "rop": 1.3643275941519396e+30,
+   "rop_log2": 100.10603294385153,
+   "red": 1.188713965869705e+30,
+   "red_log2": 99.90724445517337,
+   "svp": 1.756136282822346e+29,
+   "svp_log2": 97.14831955954683,
+   "beta": 242.0,
+   "eta": 270.0,
+   "d": 1990.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=1024, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='abgst21_com_hide')"
+  },
+  "bdd_hybrid": {
+   "rop": 1.3860889482182044e+30,
+   "rop_log2": 100.12886268781588,
+   "red": 1.2104753199359698e+30,
+   "red_log2": 99.93341651152653,
+   "svp": 1.756136282822346e+29,
+   "svp_log2": 97.14831955954683,
+   "beta": 242.0,
+   "eta": 270.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 2022.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1024, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='abgst21_com_hide')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 9.792497543546612e+41,
+   "rop_log2": 139.4907287516571,
+   "red": 3.4450284677717847e+41,
+   "red_log2": 137.98356779497863,
+   "svp": 6.347469075774828e+41,
+   "svp_log2": 138.86523335160794,
+   "beta": 249.0,
+   "eta": 2.0,
+   "zeta": 102.0,
+   "|S|": 4.6383971121470813e+48,
+   "d": 1936.0,
+   "prob": 5.85652174841626e-11,
+   "repetitions": 78633195328.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1024, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='abgst21_com_hide')"
+  },
+  "dual": {
+   "rop": 1.3899801978135454e+31,
+   "rop_log2": 103.45483527142126,
+   "mem": 1.7090311237991041e+19,
+   "mem_log2": 63.88981247356718,
+   "m": 1022.0,
+   "beta": 251.0,
+   "d": 2046.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 1.9131190259023763e+30,
+   "rop_log2": 100.59376948127573,
+   "problem": "LWEParameters(n=1024, q=4294967296, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=2048, tag='abgst21_com_hide')",
+   "red": 1.558535353561692e+30,
+   "red_log2": 100.29803372781427,
+   "guess": 3.5458367234068446e+29,
+   "guess_log2": 98.16204085713126,
+   "beta": 240.0,
+   "p": 4.0,
+   "zeta": 10.0,
+   "t": 30.0,
+   "beta_": 258.0,
+   "N": 5284078145979618.0,
+   "m": 1024.0
+  }
+ },
+ "min_rop_log2": 100.10603294385153,
+ "best_attack": "bdd",
+ "seconds": 67.8,
+ "trivial_check": null
+}

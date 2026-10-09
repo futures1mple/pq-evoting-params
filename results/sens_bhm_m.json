@@ -1,0 +1,34 @@
+[
+ {
+  "m": 2048,
+  "params": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=2048, tag=None)",
+  "min_rop_log2": 211.7,
+  "attack": "usvp",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 337.01783058868926,
+   "usvp": 211.7,
+   "bdd": 212.7,
+   "bdd_hybrid": 212.7,
+   "bdd_mitm_hybrid": 529.8450324861585,
+   "dual": 218.124,
+   "dual_hybrid": 215.7880041043975
+  }
+ },
+ {
+  "m": 4096,
+  "params": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=4096, tag=None)",
+  "min_rop_log2": 211.7,
+  "attack": "usvp",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 328.2221367861204,
+   "usvp": 211.7,
+   "bdd": 212.7,
+   "bdd_hybrid": 212.7,
+   "bdd_mitm_hybrid": 529.8450324861585,
+   "dual": 218.124,
+   "dual_hybrid": 215.7880041043975
+  }
+ }
+]

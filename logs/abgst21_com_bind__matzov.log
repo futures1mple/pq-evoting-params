@@ -1,0 +1,5 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# SISParameters(n=1024, q=4294967296, length_bound=165888000.0, m=3072, norm=2, tag='abgst21_com_bind')
+# model matzov
+lattice  :: rop: ≈2^145.2, red: ≈2^145.2, δ: 1.003948, β: 405, d: 2400, tag: euclidean
+lattice              :: rop: ≈2^145.2, red: ≈2^145.2, δ: 1.003948, β: 405, d: 2400, tag: euclidean

@@ -1,0 +1,145 @@
+{
+ "id": "bhm_lwe",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=1032, tag='bhm_lwe')",
+ "problem": {
+  "id": "bhm_lwe",
+  "scheme": "Boyen-Haines-Mueller",
+  "role": "privacy",
+  "component": "Regev-type KEM (plain LWE)",
+  "kind": "LWE",
+  "n": 1024,
+  "m": 1032,
+  "q": 65536,
+  "Xs": [
+   "DG",
+   2.0
+  ],
+  "Xe": [
+   "DG",
+   2.0
+  ],
+  "claimed": "240 (target)",
+  "tool": "'estimates from multiple sources', FrodoKEM recommendations",
+  "source": "Sec. 7.2 p.14; App. A p.22-23",
+  "assumptions": [
+   "secret from the noise distribution and m = n + 8 samples, as in FrodoKEM"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "dreg": Infinity,
+   "tag": "arora-gb",
+   "problem": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=1032, tag='bhm_lwe')"
+  },
+  "bkw": {
+   "rop": 2.834497516407766e+101,
+   "rop_log2": 337.01783058868926,
+   "m": 2.563184443105092e+97,
+   "mem": 5.126368886210184e+97,
+   "mem_log2": 324.58496250072113,
+   "b": 20.0,
+   "t1": 1.0,
+   "t2": 23.0,
+   "ell": 19.0,
+   "#cod": 915.0,
+   "#top": 0.0,
+   "#test": 92.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=13.86), m=25631844431050920988740260474034625375232454268279833239364499293866636709367686600275545043238912, tag='bhm_lwe')"
+  },
+  "usvp": {
+   "rop": 6.545620778687007e+63,
+   "rop_log2": 211.992,
+   "red": 6.545620778687007e+63,
+   "red_log2": 211.992,
+   "delta": 1.002596692112175,
+   "beta": 726.0,
+   "d": 2017.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=1032, tag='bhm_lwe')"
+  },
+  "bdd": {
+   "rop": 1.0692520159193965e+64,
+   "rop_log2": 212.7,
+   "red": 5.3462600795969825e+63,
+   "red_log2": 211.7,
+   "svp": 5.3462600795969825e+63,
+   "svp_log2": 211.7,
+   "beta": 725.0,
+   "eta": 724.0,
+   "d": 2055.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=1032, tag='bhm_lwe')"
+  },
+  "bdd_hybrid": {
+   "rop": 1.0692520159193965e+64,
+   "rop_log2": 212.7,
+   "red": 5.3462600795969825e+63,
+   "red_log2": 211.7,
+   "svp": 5.3462600795969825e+63,
+   "svp_log2": 211.7,
+   "beta": 725.0,
+   "eta": 724.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 2056.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=1032, tag='bhm_lwe')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 6.163910429099788e+158,
+   "rop_log2": 527.4884848896769,
+   "red": 6.163910429099788e+158,
+   "red_log2": 527.4884848896769,
+   "svp": 3.2512543049836496e+101,
+   "svp_log2": 337.21573398806464,
+   "beta": 727.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 2056.0,
+   "prob": 5.987437109880228e-95,
+   "repetitions": 7.691387987005031e+94,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=1032, tag='bhm_lwe')"
+  },
+  "dual": {
+   "rop": 4.590571691513435e+65,
+   "rop_log2": 218.124,
+   "mem": 3.42207676388002e+49,
+   "mem_log2": 164.5493487721447,
+   "m": 1032.0,
+   "beta": 747.0,
+   "d": 2056.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 9.092052606571514e+64,
+   "rop_log2": 215.7880041043975,
+   "problem": "LWEParameters(n=1024, q=65536, Xs=D(\u03c3=2.00), Xe=D(\u03c3=2.00), m=1032, tag='bhm_lwe')",
+   "red": 9.092026740159077e+64,
+   "red_log2": 215.78799999999998,
+   "guess": 2.5866412436543933e+59,
+   "guess_log2": 197.36483757047063,
+   "beta": 739.0,
+   "p": 3.0,
+   "zeta": 10.0,
+   "t": 0.0,
+   "beta_": 739.0,
+   "N": 4.624941925798843e+45,
+   "m": 1024.0
+  }
+ },
+ "min_rop_log2": 211.992,
+ "best_attack": "usvp",
+ "seconds": 38.1,
+ "trivial_check": null
+}

@@ -1,0 +1,105 @@
+{
+ "id": "hough_ntru",
+ "model": "core265",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag='hough_ntru', ntru_type='matrix')",
+ "problem": {
+  "id": "hough_ntru",
+  "scheme": "Hough et al.",
+  "role": "privacy",
+  "component": "NTRU key (f,g) ~ D_7.12",
+  "kind": "NTRU",
+  "n": 2048,
+  "q": 576460752303423488,
+  "Xs": [
+   "DG",
+   7.12
+  ],
+  "Xe": [
+   "DG",
+   7.12
+  ],
+  "claimed": "128",
+  "tool": "DvW21 fatigue analysis, 0.292b+16.4+log2(8d)",
+  "source": "Table 2 p.29; Sec. 4",
+  "assumptions": [
+   "q = 2^59"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "usvp": {
+   "rop": 2.5400722486350423e+26,
+   "rop_log2": 87.715,
+   "red": 2.5400722486350423e+26,
+   "red_log2": 87.715,
+   "delta": 1.0045333184262786,
+   "beta": 331.0,
+   "d": 4027.0,
+   "tag": "usvp",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag='hough_ntru', ntru_type='matrix')"
+  },
+  "dsd": {
+   "rop": 1111003114715.276,
+   "rop_log2": 40.015,
+   "red": 1111003114715.276,
+   "red_log2": 40.015,
+   "delta": 1.0074281554873274,
+   "beta": 151.0,
+   "d": 4096.0,
+   "tag": "dsd",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag='hough_ntru', ntru_type='matrix')"
+  },
+  "bdd": {
+   "rop": 2.944756758467107e+26,
+   "rop_log2": 87.92827893717258,
+   "red": 2.5400722486350423e+26,
+   "red_log2": 87.715,
+   "svp": 4.046845098320645e+25,
+   "svp_log2": 85.065,
+   "beta": 331.0,
+   "eta": 321.0,
+   "d": 4094.0,
+   "tag": "bdd",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag='hough_ntru', ntru_type='matrix')"
+  },
+  "bdd_hybrid": {
+   "rop": 2.944756758467107e+26,
+   "rop_log2": 87.92827893717258,
+   "red": 2.5400722486350423e+26,
+   "red_log2": 87.715,
+   "svp": 4.046845098320645e+25,
+   "svp_log2": 85.065,
+   "beta": 331.0,
+   "eta": 321.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 4096.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag='hough_ntru', ntru_type='matrix')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 3.0776840461096283e+57,
+   "rop_log2": 190.9717465413155,
+   "red": 3.0776840461096283e+57,
+   "red_log2": 190.9717465413155,
+   "svp": 2.032815013395082e+38,
+   "svp_log2": 127.2567465413155,
+   "beta": 331.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 4096.0,
+   "prob": 3.8007361426381963e-31,
+   "repetitions": 1.211652167674948e+31,
+   "tag": "hybrid",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag='hough_ntru', ntru_type='matrix')"
+  }
+ },
+ "min_rop_log2": 40.015,
+ "best_attack": "dsd",
+ "seconds": 97.5,
+ "trivial_check": null
+}

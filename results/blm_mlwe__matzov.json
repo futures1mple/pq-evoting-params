@@ -1,0 +1,142 @@
+{
+ "id": "blm_mlwe",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=1024, q=3109, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='blm_mlwe')",
+ "problem": {
+  "id": "blm_mlwe",
+  "scheme": "Bootle et al.",
+  "role": "privacy",
+  "component": "MLPKE (MLWE, k=2)",
+  "kind": "LWE",
+  "n": 1024,
+  "m": 1024,
+  "q": 3109,
+  "Xs": [
+   "CB",
+   2
+  ],
+  "Xe": [
+   "CB",
+   2
+  ],
+  "claimed": ">=128",
+  "tool": "not stated",
+  "source": "Fig. 3 p.28; Def. 1 p.9",
+  "assumptions": [
+   "public key A in R^{2x2}: 2 samples"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 4.0719479767708576e+95,
+   "rop_log2": 317.6088881439512,
+   "m": 5.143339454693673e+91,
+   "mem": 1.0286289801398952e+92,
+   "mem_log2": 305.65810743486765,
+   "b": 26.0,
+   "t1": 0.0,
+   "t2": 16.0,
+   "ell": 25.0,
+   "#cod": 887.0,
+   "#top": 0.0,
+   "#test": 139.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=1024, q=3109, Xs=D(\u03c3=1.00), Xe=D(\u03c3=6.71), m=51433394546936729492731181170302626706484946530993279331916177008779636179715542232074289152, tag='blm_mlwe')"
+  },
+  "usvp": {
+   "rop": 2.564668551270647e+83,
+   "rop_log2": 277.07880426470524,
+   "red": 2.564668551270647e+83,
+   "red_log2": 277.07880426470524,
+   "delta": 1.0022480782113121,
+   "beta": 881.0,
+   "d": 1884.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=1024, q=3109, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='blm_mlwe')"
+  },
+  "bdd": {
+   "rop": 1.2315928703490717e+82,
+   "rop_log2": 272.69862920156874,
+   "red": 6.607647460792929e+81,
+   "red_log2": 271.8003124022745,
+   "svp": 5.708281242697787e+81,
+   "svp_log2": 271.5892321029342,
+   "beta": 862.0,
+   "eta": 896.0,
+   "d": 1894.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=1024, q=3109, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='blm_mlwe')"
+  },
+  "bdd_hybrid": {
+   "rop": 1.2354345258495324e+82,
+   "rop_log2": 272.70312233514943,
+   "red": 6.646064015797538e+81,
+   "red_log2": 271.8086758752092,
+   "svp": 5.708281242697787e+81,
+   "svp_log2": 271.5892321029342,
+   "beta": 862.0,
+   "eta": 896.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 1900.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1024, q=3109, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='blm_mlwe')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 5.765912457534484e+150,
+   "rop_log2": 500.8167631660108,
+   "red": 9.739199102363586e+132,
+   "red_log2": 441.7783116630908,
+   "svp": 5.765912457534484e+150,
+   "svp_log2": 500.8167631660108,
+   "beta": 881.0,
+   "eta": 2.0,
+   "zeta": 311.0,
+   "|S|": 1.8066808365233039e+189,
+   "d": 1598.0,
+   "prob": 8.669058008448582e-50,
+   "repetitions": 5.312192145328871e+49,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1024, q=3109, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='blm_mlwe')"
+  },
+  "dual": {
+   "rop": 3.177806707759476e+87,
+   "rop_log2": 290.6757756296548,
+   "mem": 1.717049797141595e+59,
+   "mem_log2": 196.7736894787238,
+   "m": 928.0,
+   "beta": 926.0,
+   "d": 1952.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 3.100710430718138e+79,
+   "rop_log2": 264.06491829787507,
+   "problem": "LWEParameters(n=1024, q=3109, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='blm_mlwe')",
+   "red": 2.879996748517229e+79,
+   "red_log2": 263.95838667898425,
+   "guess": 2.20713682200909e+78,
+   "guess_log2": 260.2525674673137,
+   "beta": 830.0,
+   "p": 4.0,
+   "zeta": 0.0,
+   "t": 120.0,
+   "beta_": 811.0,
+   "N": 3.3424402576958897e+50,
+   "m": 1024.0
+  }
+ },
+ "min_rop_log2": 264.06491829787507,
+ "best_attack": "dual_hybrid",
+ "seconds": 79.5,
+ "trivial_check": null
+}

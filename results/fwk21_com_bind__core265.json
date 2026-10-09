@@ -1,0 +1,43 @@
+{
+ "id": "fwk21_com_bind",
+ "model": "core265",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=4096, q=9223372036854775808, length_bound=1152921504606846976, m=65536, norm=+Infinity, tag='fwk21_com_bind')",
+ "problem": {
+  "id": "fwk21_com_bind",
+  "scheme": "Farzaliyev et al. 2021",
+  "role": "correctness",
+  "component": "MSIS_{mu, 8 d beta'} (l_inf)",
+  "kind": "SIS",
+  "n": 4096,
+  "m": 65536,
+  "q": 9223372036854775808,
+  "beta": 1152921504606846976,
+  "norm": "oo",
+  "claimed": "128-bit soundness; root Hermite factor 1.003",
+  "tool": "pq-crystals security-estimates script",
+  "source": "Thm 1 p.7; Sec. 4.2 p.11",
+  "assumptions": [
+   "delta_1 = delta_2 = 2^45 (text '245'), beta' ~ 2^45, bound 8 d beta' = 2^60 in l_inf",
+   "m = 16 ring columns given to the attacker (the matrix has many more; the estimator chooses the sub-dimension)"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "lattice": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "tag": Infinity,
+   "problem": "SISParameters(n=4096, q=9223372036854775808, length_bound=1152921504606846976, m=65536, norm=+Infinity, tag='fwk21_com_bind')"
+  }
+ },
+ "min_rop_log2": Infinity,
+ "best_attack": "lattice",
+ "seconds": 165.6,
+ "trivial_check": {
+  "beta_log2": 60.0,
+  "q_log2": 63.0,
+  "linear_algebra_norm_log2": 62.0,
+  "trivial": false
+ }
+}

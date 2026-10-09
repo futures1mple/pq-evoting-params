@@ -1,0 +1,18 @@
+[
+ {
+  "sigma": 1.118033988749895,
+  "params": "LWEParameters(n=512, q=64, Xs=D(\u03c3=0.50, \u03bc=0.50), Xe=D(\u03c3=1.12), m=1536, tag=None)",
+  "min_rop_log2": 172.6519484307357,
+  "attack": "dual_hybrid",
+  "all": {
+   "arora-gb": Infinity,
+   "bkw": 363.91860153643825,
+   "usvp": 184.54399999999998,
+   "bdd": 185.1529686913899,
+   "bdd_hybrid": 185.1529686913899,
+   "bdd_mitm_hybrid": 247.38152687011683,
+   "dual": 196.516,
+   "dual_hybrid": 172.6519484307357
+  }
+ }
+]

@@ -1,0 +1,146 @@
+{
+ "id": "evolved_hide_k10",
+ "model": "matzov",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4352, tag='evolved_hide_k10')",
+ "problem": {
+  "id": "evolved_hide_k10",
+  "scheme": "EVOLVED",
+  "role": "privacy",
+  "component": "commitment hiding, multi-candidate k=10",
+  "kind": "LWE",
+  "n": 1792,
+  "m": 4352,
+  "q": 2147483489,
+  "Xs": [
+   "DG",
+   1.0
+  ],
+  "Xe": [
+   "DG",
+   1.0
+  ],
+  "claimed": "439.9 (primal, 0.265b)",
+  "tool": "estimator [APS15], version not stated; LWE dim 256*(7+m)",
+  "source": "Sec. 8.2, p.12-13, Fig. 8",
+  "variant": "multi-candidate k=10",
+  "assumptions": [
+   "translation R2 with key (d+k)x(2d+k) (Sec. 3, p.5): secret rank d=7, d+k samples",
+   "k = message slots (k=120 for IRV with 7 candidates gives LWE dim 256*127 as in Fig. 8)"
+  ]
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "dreg": Infinity,
+   "tag": "arora-gb",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4352, tag='evolved_hide_k10')"
+  },
+  "bkw": {
+   "rop": 7.055500077938309e+117,
+   "rop_log2": 391.48433544323973,
+   "m": 2.0682646402815858e+113,
+   "mem": 4.1364374050370413e+113,
+   "mem_log2": 377.4262634728939,
+   "b": 12.0,
+   "t1": 0.0,
+   "t2": 43.0,
+   "ell": 11.0,
+   "#cod": 1651.0,
+   "#top": 0.0,
+   "#test": 149.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=6.48), m=206826464028158582870752018851947198485933391053810302601400132692297952156873880944136391668150807408096739065856, tag='evolved_hide_k10')"
+  },
+  "usvp": {
+   "rop": 5.112977939383083e+57,
+   "rop_log2": 191.70406520992012,
+   "red": 5.112977939383083e+57,
+   "red_log2": 191.70406520992012,
+   "delta": 1.003098728146979,
+   "beta": 570.0,
+   "d": 3472.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4352, tag='evolved_hide_k10')"
+  },
+  "bdd": {
+   "rop": 1.5774322885191228e+57,
+   "rop_log2": 190.00747948724913,
+   "red": 1.0985086246246994e+57,
+   "red_log2": 189.48544760529072,
+   "svp": 4.7892366389442355e+56,
+   "svp_log2": 188.28776903542132,
+   "beta": 562.0,
+   "eta": 598.0,
+   "d": 3487.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4352, tag='evolved_hide_k10')"
+  },
+  "bdd_hybrid": {
+   "rop": 1.5860701341144623e+57,
+   "rop_log2": 190.01535797527225,
+   "red": 1.107146470220039e+57,
+   "red_log2": 189.49674750502766,
+   "svp": 4.7892366389442355e+56,
+   "svp_log2": 188.28776903542132,
+   "beta": 562.0,
+   "eta": 598.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 3510.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4352, tag='evolved_hide_k10')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 6.716877850057257e+125,
+   "rop_log2": 417.98880265390534,
+   "red": 6.716877850057257e+125,
+   "red_log2": 417.98880265390534,
+   "svp": 1.323656182241357e+75,
+   "svp_log2": 249.5491355494295,
+   "beta": 571.0,
+   "eta": 2.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 3531.0,
+   "prob": 4.337764069521247e-68,
+   "repetitions": 1.0616460720733382e+68,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4352, tag='evolved_hide_k10')"
+  },
+  "dual": {
+   "rop": 8.983867123124845e+58,
+   "rop_log2": 195.8391660930236,
+   "mem": 1.1372295383316716e+39,
+   "mem_log2": 129.74071917769615,
+   "m": 1761.0,
+   "beta": 581.0,
+   "d": 3553.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 4.993903992059424e+56,
+   "rop_log2": 188.34814139937347,
+   "problem": "LWEParameters(n=1792, q=2147483489, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=4352, tag='evolved_hide_k10')",
+   "red": 4.159037659788326e+56,
+   "red_log2": 188.08422306223605,
+   "guess": 8.348663322710976e+55,
+   "guess_log2": 185.76759044967733,
+   "beta": 553.0,
+   "p": 4.0,
+   "zeta": 20.0,
+   "t": 60.0,
+   "beta_": 555.0,
+   "N": 2.177070177255737e+34,
+   "m": 1792.0
+  }
+ },
+ "min_rop_log2": 188.34814139937347,
+ "best_attack": "dual_hybrid",
+ "seconds": 118.1,
+ "trivial_check": null
+}

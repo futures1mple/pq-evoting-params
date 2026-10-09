@@ -1,0 +1,75 @@
+{
+ "constraints_log2": {
+  "(3) 2B'_OR": 24.319767512050074,
+  "(4) 2sqrt(60)N_A B'_Amo1": 34.25050484961296,
+  "(7) (l+1)B'_Amo1": 33.25125586219558,
+  "(8) B'_Amo2": 33.25125586219558
+ },
+ "Br_log2": 34.25050484961296,
+ "two_Br_log2": 35.25050484961296,
+ "q_log2": 30.999999893182647,
+ "q_mod_32": 1,
+ "linear_algebra_norm_log2": 34.61119610385087,
+ "curve": [
+  {
+   "log2_beta": 10,
+   "min_rop_log2": Infinity
+  },
+  {
+   "log2_beta": 12,
+   "min_rop_log2": Infinity
+  },
+  {
+   "log2_beta": 14,
+   "min_rop_log2": Infinity
+  },
+  {
+   "log2_beta": 16,
+   "min_rop_log2": Infinity
+  },
+  {
+   "log2_beta": 18,
+   "min_rop_log2": Infinity
+  },
+  {
+   "log2_beta": 20,
+   "min_rop_log2": 729.4159999999999
+  },
+  {
+   "log2_beta": 22,
+   "min_rop_log2": 494.356
+  },
+  {
+   "log2_beta": 24,
+   "min_rop_log2": 365.0
+  },
+  {
+   "log2_beta": 26,
+   "min_rop_log2": 284.40799999999996
+  },
+  {
+   "log2_beta": 28,
+   "min_rop_log2": 229.80399999999997
+  },
+  {
+   "log2_beta": 30,
+   "min_rop_log2": 190.384
+  },
+  {
+   "log2_beta": 31,
+   "min_rop_log2": Infinity
+  },
+  {
+   "log2_beta": 32,
+   "min_rop_log2": 11.68
+  },
+  {
+   "log2_beta": 34,
+   "min_rop_log2": 11.68
+  },
+  {
+   "log2_beta": 35.25,
+   "min_rop_log2": 11.68
+  }
+ ]
+}

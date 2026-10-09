@@ -1,0 +1,143 @@
+{
+ "id": "pqk_hide",
+ "model": "core265",
+ "estimator_commit": "352ddaf4a288a0543f5d9eb588d2f89c7acec463",
+ "params": "LWEParameters(n=2916, q=18446744069414584321, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=3402, tag='pqk_hide')",
+ "problem": {
+  "id": "pqk_hide",
+  "scheme": "PQKryvos",
+  "role": "privacy",
+  "component": "BDLOP hiding (MLWE)",
+  "kind": "LWE",
+  "n": 2916,
+  "m": 3402,
+  "q": 18446744069414584321,
+  "Xs": [
+   "T",
+   null
+  ],
+  "Xe": [
+   "T",
+   null
+  ],
+  "claimed": "150 (time) / 100 (space), PQ",
+  "tool": "lattice-estimator 352ddaf (Sep 17, 2025)",
+  "source": "p.1158, p.1159, ref. [71]; Thm 2 p.1156",
+  "assumptions": [
+   "translation R2 (A in R^{(d+1)x(2d+1)}), ring Z[X]/Phi_729 of degree 486 treated as degree-486 module ring",
+   "beta = 1: uniform ternary"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "bkw": {
+   "rop": 8.923519449054244e+145,
+   "rop_log2": 484.8371865820733,
+   "m": 3.727292063191109e+140,
+   "mem": 7.559122720354344e+136,
+   "mem_log2": 454.70043971578974,
+   "b": 7.0,
+   "t1": 0.0,
+   "t2": 104.0,
+   "ell": 6.0,
+   "#cod": 2740.0,
+   "#top": 0.0,
+   "#test": 178.0,
+   "tag": "coded-bkw",
+   "problem": "LWEParameters(n=2916, q=18446744069414584321, Xs=D(\u03c3=0.82), Xe=D(\u03c3=6.16), m=372729206319110893072070115113634732864095685257018249444221911417409353314383688317263467349747197790705419770119742531704212972601597755392, tag='pqk_hide')"
+  },
+  "usvp": {
+   "rop": 1.5330161214733187e+33,
+   "rop_log2": 110.24000000000001,
+   "red": 1.5330161214733187e+33,
+   "red_log2": 110.24000000000001,
+   "delta": 1.0038750268759924,
+   "beta": 416.0,
+   "d": 5613.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=2916, q=18446744069414584321, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=3402, tag='pqk_hide')"
+  },
+  "bdd": {
+   "rop": 4.4720077114892454e+33,
+   "rop_log2": 111.78454980723636,
+   "red": 1.275774076582464e+33,
+   "red_log2": 109.97500000000001,
+   "svp": 3.1962336349067815e+33,
+   "svp_log2": 111.30000000000001,
+   "beta": 415.0,
+   "eta": 419.0,
+   "d": 5731.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=2916, q=18446744069414584321, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=3402, tag='pqk_hide')"
+  },
+  "bdd_hybrid": {
+   "rop": 4.4720077114892454e+33,
+   "rop_log2": 111.78454980723636,
+   "red": 1.275774076582464e+33,
+   "red_log2": 109.97500000000001,
+   "svp": 3.1962336349067815e+33,
+   "svp_log2": 111.30000000000001,
+   "beta": 415.0,
+   "eta": 419.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 5779.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=2916, q=18446744069414584321, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=3402, tag='pqk_hide')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 2.2533973181933596e+70,
+   "rop_log2": 233.70706835358052,
+   "red": 1.1331067365937823e+70,
+   "red_log2": 232.7152504089239,
+   "svp": 1.1202905815995771e+70,
+   "svp_log2": 232.69883962998676,
+   "beta": 415.0,
+   "eta": 2.0,
+   "zeta": 108.0,
+   "|S|": 1.538256233719861e+51,
+   "d": 5671.0,
+   "prob": 5.1849985105509864e-37,
+   "repetitions": 8.881719399951611e+36,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=2916, q=18446744069414584321, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=3402, tag='pqk_hide')"
+  },
+  "dual": {
+   "rop": 3.196233639636127e+33,
+   "rop_log2": 111.30000000213471,
+   "mem": 7.211770432729791e+28,
+   "mem_log2": 95.86434013003992,
+   "m": 2887.0,
+   "beta": 420.0,
+   "d": 5803.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 8.837752882498342e+32,
+   "rop_log2": 109.445378628027,
+   "problem": "LWEParameters(n=2916, q=18446744069414584321, Xs=D(\u03c3=0.82), Xe=D(\u03c3=0.82), m=3402, tag='pqk_hide')",
+   "red": 8.835433763224208e+32,
+   "red_log2": 109.44500000000001,
+   "guess": 2.3191192741330326e+29,
+   "guess_log2": 97.54949177256916,
+   "beta": 413.0,
+   "p": 3.0,
+   "zeta": 0.0,
+   "t": 50.0,
+   "beta_": 413.0,
+   "N": 1.8898998143887835e+25,
+   "m": 2916.0
+  }
+ },
+ "min_rop_log2": 109.445378628027,
+ "best_attack": "dual_hybrid",
+ "seconds": 335.9,
+ "trivial_check": null
+}

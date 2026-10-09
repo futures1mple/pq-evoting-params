@@ -1,0 +1,15 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# LWEParameters(n=512, q=64, Xs=D(σ=0.50, μ=0.50), Xe=D(σ=1.12, μ=-0.50), m=1536, tag='blm_mlwr')
+# model core292
+Algorithm <estimator.lwe_bkw.CodedBKW object at 0x7f7603830830> on LWEParameters(n=512, q=64, Xs=D(σ=0.50, μ=0.50), Xe=D(σ=1.12, μ=-0.50), m=1536, tag='blm_mlwr') failed with Amplifying for μ≠0 not implemented.
+usvp                 :: rop: ≈2^184.5, red: ≈2^184.5, δ: 1.002875, β: 632, d: 748, tag: usvp
+bdd                  :: rop: ≈2^185.2, red: ≈2^179.3, svp: ≈2^185.1, β: 614, η: 633, d: 758, tag: bdd
+dual                 :: rop: ≈2^196.5, mem: ≈2^149.0, m: 280, β: 673, d: 792, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^172.7, red: ≈2^172.6, guess: ≈2^168.4, β: 591, p: 2, ζ: 0, t: 150, β': 591, N: ≈2^122.3, m: 512
+arora-gb             :: rop: ≈2^inf
+usvp                 :: rop: ≈2^184.5, red: ≈2^184.5, δ: 1.002875, β: 632, d: 748, tag: usvp
+bdd                  :: rop: ≈2^185.2, red: ≈2^179.3, svp: ≈2^185.1, β: 614, η: 633, d: 758, tag: bdd
+bdd_hybrid           :: rop: ≈2^185.2, red: ≈2^179.3, svp: ≈2^185.1, β: 614, η: 633, ζ: 0, |S|: 1, d: 766, prob: 1.0, ↻: 1, tag: hybrid
+bdd_mitm_hybrid      :: rop: ≈2^247.4, red: ≈2^230.0, svp: ≈2^247.4, β: 568, η: 2, ζ: 330, |S|: ≈2^329.8, d: 568, prob: ≈2^-62.0, ↻: ≈2^64.2, tag: hybrid
+dual                 :: rop: ≈2^196.5, mem: ≈2^149.0, m: 280, β: 673, d: 792, ↻: 1, tag: dual
+dual_hybrid          :: rop: ≈2^172.7, red: ≈2^172.6, guess: ≈2^168.4, β: 591, p: 2, ζ: 0, t: 150, β': 591, N: ≈2^122.3, m: 512

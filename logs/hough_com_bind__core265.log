@@ -1,0 +1,4 @@
+# estimator commit 53da5982597709ba0fdf94ea37a84d822310fd84
+# SISParameters(n=2048, q=576460752303423488, length_bound=2973052.7568760025, m=6144, norm=2, tag='hough_com_bind')
+# model core265
+lattice              :: rop: ≈2^inf, red: ≈2^inf, δ: 1.000479, β: 6144, d: 6144, tag: euclidean

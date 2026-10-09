@@ -1,0 +1,130 @@
+{
+ "id": "blm_mlwr",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "LWEParameters(n=512, q=64, Xs=D(\u03c3=0.50, \u03bc=0.50), Xe=D(\u03c3=1.12, \u03bc=-0.50), m=1536, tag='blm_mlwr')",
+ "problem": {
+  "id": "blm_mlwr",
+  "scheme": "Bootle et al.",
+  "role": "privacy",
+  "component": "OTSE (MLWR 2^6 -> 2^4, binary secret)",
+  "kind": "LWE",
+  "n": 512,
+  "m": 1536,
+  "q": 64,
+  "Xs": [
+   "B",
+   null
+  ],
+  "Xe": [
+   "U",
+   [
+    -2,
+    1
+   ]
+  ],
+  "claimed": ">=128",
+  "tool": "not stated",
+  "source": "Fig. 2 p.16; Thm 2 p.19; Fig. 3 p.28",
+  "assumptions": [
+   "LWR -> LWE with deterministic rounding error modelled as uniform on {-2,...,1}",
+   "k_LWE + L = 3 samples (L = 1)"
+  ],
+  "variant": "main"
+ },
+ "attacks": {
+  "arora-gb": {
+   "rop": Infinity,
+   "rop_log2": Infinity
+  },
+  "usvp": {
+   "rop": 3.57502859452324e+55,
+   "rop_log2": 184.54399999999998,
+   "red": 3.57502859452324e+55,
+   "red_log2": 184.54399999999998,
+   "delta": 1.002874986635549,
+   "beta": 632.0,
+   "d": 748.0,
+   "tag": "usvp",
+   "problem": "LWEParameters(n=512, q=64, Xs=D(\u03c3=0.50, \u03bc=0.50), Xe=D(\u03c3=1.12, \u03bc=-0.50), m=1536, tag='blm_mlwr')"
+  },
+  "bdd": {
+   "rop": 5.452521193770102e+55,
+   "rop_log2": 185.1529686913899,
+   "red": 9.355475431505915e+53,
+   "red_log2": 179.28799999999998,
+   "svp": 5.358966439455044e+55,
+   "svp_log2": 185.128,
+   "beta": 614.0,
+   "eta": 633.0,
+   "d": 758.0,
+   "tag": "bdd",
+   "problem": "LWEParameters(n=512, q=64, Xs=D(\u03c3=0.50, \u03bc=0.50), Xe=D(\u03c3=1.12, \u03bc=-0.50), m=1536, tag='blm_mlwr')"
+  },
+  "bdd_hybrid": {
+   "rop": 5.452521193770102e+55,
+   "rop_log2": 185.1529686913899,
+   "red": 9.355475431505915e+53,
+   "red_log2": 179.28799999999998,
+   "svp": 5.358966439455044e+55,
+   "svp_log2": 185.128,
+   "beta": 614.0,
+   "eta": 633.0,
+   "zeta": 0.0,
+   "|S|": 1.0,
+   "d": 766.0,
+   "prob": 1.0,
+   "repetitions": 1.0,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=512, q=64, Xs=D(\u03c3=0.50, \u03bc=0.50), Xe=D(\u03c3=1.12, \u03bc=-0.50), m=1536, tag='blm_mlwr')"
+  },
+  "bdd_mitm_hybrid": {
+   "rop": 2.9461846405500303e+74,
+   "rop_log2": 247.38152687011683,
+   "red": 1.7658152454521683e+69,
+   "red_log2": 230.03337295113536,
+   "svp": 2.946166982397576e+74,
+   "svp_log2": 247.3815182232028,
+   "beta": 568.0,
+   "eta": 2.0,
+   "zeta": 330.0,
+   "|S|": 1.9164291623381837e+99,
+   "d": 568.0,
+   "prob": 2.207655904398368e-19,
+   "repetitions": 2.0859999861450756e+19,
+   "tag": "hybrid",
+   "problem": "LWEParameters(n=512, q=64, Xs=D(\u03c3=0.50, \u03bc=0.50), Xe=D(\u03c3=1.12, \u03bc=-0.50), m=1536, tag='blm_mlwr')"
+  },
+  "dual": {
+   "rop": 1.43618579831485e+59,
+   "rop_log2": 196.516,
+   "mem": 7.355941171938094e+44,
+   "mem_log2": 149.0437461170977,
+   "m": 280.0,
+   "beta": 673.0,
+   "d": 792.0,
+   "repetitions": 1.0,
+   "tag": "dual"
+  },
+  "dual_hybrid": {
+   "rop": 9.406223364360098e+51,
+   "rop_log2": 172.6519484307357,
+   "problem": "LWEParameters(n=512, q=64, Xs=D(\u03c3=0.50, \u03bc=0.50), Xe=D(\u03c3=1.12, \u03bc=-0.50), m=1536, tag='blm_mlwr')",
+   "red": 8.899147635811094e+51,
+   "red_log2": 172.572,
+   "guess": 5.0707572854900355e+50,
+   "guess_log2": 168.43860596505542,
+   "beta": 591.0,
+   "p": 2.0,
+   "zeta": 0.0,
+   "t": 150.0,
+   "beta_": 591.0,
+   "N": 6.471126844056315e+36,
+   "m": 512.0
+  }
+ },
+ "min_rop_log2": 172.6519484307357,
+ "best_attack": "dual_hybrid",
+ "seconds": 36.1,
+ "trivial_check": null
+}

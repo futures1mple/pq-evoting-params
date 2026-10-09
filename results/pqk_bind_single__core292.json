@@ -1,0 +1,47 @@
+{
+ "id": "pqk_bind_single",
+ "model": "core292",
+ "estimator_commit": "53da5982597709ba0fdf94ea37a84d822310fd84",
+ "params": "SISParameters(n=2916, q=18446744069414584321, length_bound=158.97169559390125, m=6318, norm=2, tag='pqk_bind_single')",
+ "problem": {
+  "id": "pqk_bind_single",
+  "scheme": "PQKryvos",
+  "role": "correctness",
+  "component": "BDLOP binding, single opening",
+  "kind": "SIS",
+  "n": 2916,
+  "m": 6318,
+  "q": 18446744069414584321,
+  "beta": 158.97169559390125,
+  "norm": 2,
+  "claimed": "150 / 100",
+  "tool": "lattice-estimator 352ddaf",
+  "source": "Thm 2 p.1156",
+  "variant": "single",
+  "assumptions": [
+   "exact openings proven with ||r||_inf <= 1 (Ligero); difference has l_inf <= 2, converted to l2 <= 2 sqrt(m) (the l_inf SIS routine overflows for bound 2)"
+  ]
+ },
+ "attacks": {
+  "lattice": {
+   "rop": Infinity,
+   "rop_log2": Infinity,
+   "red": Infinity,
+   "red_log2": Infinity,
+   "delta": 1.000468278613727,
+   "beta": 6318.0,
+   "d": 6318.0,
+   "tag": "euclidean",
+   "problem": "SISParameters(n=2916, q=18446744069414584321, length_bound=158.97169559390125, m=6318, norm=2, tag='pqk_bind_single')"
+  }
+ },
+ "min_rop_log2": Infinity,
+ "best_attack": "lattice",
+ "seconds": 0.0,
+ "trivial_check": {
+  "beta_log2": 7.3126261108734365,
+  "q_log2": 63.9999999996641,
+  "linear_algebra_norm_log2": 67.96240625146699,
+  "trivial": false
+ }
+}

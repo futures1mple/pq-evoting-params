@@ -1,0 +1,68 @@
+[
+ {
+  "model": "core292",
+  "params": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag=None, ntru_type='circulant')",
+  "min_log2": 44.384,
+  "attack": "dsd",
+  "detail": {
+   "rop": "2.29570102193253e13",
+   "red": "2.29570102193253e13",
+   "delta": "1.00740004873600",
+   "beta": "152.000000000000",
+   "d": "4096",
+   "tag": "dsd",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag=None, ntru_type='circulant')"
+  },
+  "all": {
+   "usvp": 96.652,
+   "dsd": 44.384,
+   "bdd": 96.83103613126183,
+   "bdd_hybrid": 96.83103613126183,
+   "bdd_mitm_hybrid": 199.90874654131548
+  }
+ },
+ {
+  "model": "core265",
+  "params": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag=None, ntru_type='circulant')",
+  "min_log2": 40.28,
+  "attack": "dsd",
+  "detail": {
+   "rop": "1.33502139377849e12",
+   "red": "1.33502139377849e12",
+   "delta": "1.00740004873600",
+   "beta": "152.000000000000",
+   "d": "4096",
+   "tag": "dsd",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag=None, ntru_type='circulant')"
+  },
+  "all": {
+   "usvp": 87.715,
+   "dsd": 40.28,
+   "bdd": 87.92827893717258,
+   "bdd_hybrid": 87.92827893717258,
+   "bdd_mitm_hybrid": 190.9717465413155
+  }
+ },
+ {
+  "model": "matzov",
+  "params": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag=None, ntru_type='circulant')",
+  "min_log2": 76.28207001064108,
+  "attack": "dsd",
+  "detail": {
+   "rop": "9.18736994950831e22",
+   "red": "9.18736994950831e22",
+   "delta": "1.00740004873600",
+   "beta": "152.000000000000",
+   "d": "4096",
+   "tag": "dsd",
+   "problem": "NTRUParameters(n=2048, q=576460752303423488, Xs=D(\u03c3=7.12), Xe=D(\u03c3=7.12), m=2048, tag=None, ntru_type='circulant')"
+  },
+  "all": {
+   "usvp": 125.607282486352,
+   "dsd": 76.28207001064108,
+   "bdd": 124.4895720709957,
+   "bdd_hybrid": 124.49216374333305,
+   "bdd_mitm_hybrid": 228.89071413581073
+  }
+ }
+]
