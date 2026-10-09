@@ -1,0 +1,146 @@
+[
+ {
+  "model": "core292",
+  "log2_sigma": 0,
+  "usvp_log2": 23.36,
+  "beta": 80
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 3,
+  "usvp_log2": 34.163999999999994,
+  "beta": 117
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 6,
+  "usvp_log2": 49.348,
+  "beta": 169
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 9,
+  "usvp_log2": 70.95599999999999,
+  "beta": 243
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 10,
+  "usvp_log2": 80.592,
+  "beta": 276
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 11,
+  "usvp_log2": 91.396,
+  "beta": 313
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 12,
+  "usvp_log2": 104.82799999999999,
+  "beta": 359
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 12.5,
+  "usvp_log2": 112.41999999999999,
+  "beta": 385
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 13,
+  "usvp_log2": 120.88799999999999,
+  "beta": 414
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 13.5,
+  "usvp_log2": 130.524,
+  "beta": 447
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 14,
+  "usvp_log2": 141.328,
+  "beta": 484
+ },
+ {
+  "model": "core292",
+  "log2_sigma": 15,
+  "usvp_log2": 167.316,
+  "beta": 573
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 0,
+  "usvp_log2": 54.34351501293671,
+  "beta": 80
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 3,
+  "usvp_log2": 64.66123549292479,
+  "beta": 117
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 6,
+  "usvp_log2": 79.02985626625981,
+  "beta": 169
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 9,
+  "usvp_log2": 239.4035714809148,
+  "beta": 782
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 10,
+  "usvp_log2": 108.7019619174279,
+  "beta": 276
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 11,
+  "usvp_log2": 119.01265025298765,
+  "beta": 313
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 12,
+  "usvp_log2": 131.69262746593935,
+  "beta": 359
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 12.5,
+  "usvp_log2": 138.88895846673023,
+  "beta": 385
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 13,
+  "usvp_log2": 146.91238624403303,
+  "beta": 414
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 13.5,
+  "usvp_log2": 156.03907813641186,
+  "beta": 447
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 14,
+  "usvp_log2": 166.2822160053811,
+  "beta": 484
+ },
+ {
+  "model": "matzov",
+  "log2_sigma": 15,
+  "usvp_log2": 190.94896436262425,
+  "beta": 573
+ }
+]

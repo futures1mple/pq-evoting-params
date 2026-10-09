@@ -1,0 +1,5 @@
+# Environment used for all results in this repository (Python 3.13.16, Linux x86_64).
+passagemath-standard==10.8.12
+matplotlib==3.11.2
+# lattice-estimator is not on PyPI: clone https://github.com/malb/lattice-estimator
+# and check out commit 53da5982597709ba0fdf94ea37a84d822310fd84 (see reproduce.sh).

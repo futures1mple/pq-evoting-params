@@ -20,13 +20,15 @@ lattice estimator.
 | `run.py` | runs one instance under one cost model; writes `results/*.json`, `logs/*.log` |
 | `sensitivity.py` | sensitivity to the assumptions (Epoque noise, approximate moduli, LWR model, sample count, EVOLVE SIS bound) |
 | `summarize.py` | builds `results/summary.csv` and `results/summary.md` |
-| `extra_checks.py` | Kyber512 calibration, circulant NTRU variant, Epoque under MATZOV, EVOLVE SIS curve under 0.265 beta |
+| `extra_checks.py` | Kyber512 calibration, circulant NTRU variant, Epoque under MATZOV, EVOLVE SIS curve under 0.265 beta, error-width scan for Abdolmaleki et al. (`afgkr_sigma`) |
 | `make_figure.py` | draws `fig_models.pdf` (Fig. 1 of the paper) from the results |
 | `jobs.txt` | list of all (instance, cost model) runs |
+| `SOURCES.md` | exact source documents (ePrint ids, DOIs, SHA-256 of the PDFs) |
+| `requirements.txt` | pinned Python dependencies |
 | `ntru_calibration.py` | NTRU estimator on the instance discussed in Hough et al., Sec. 4.2 |
 | `reproduce.sh` | reproduces everything |
 | `results/` | one JSON file per run (cheapest attack, cheapest primal attack, all attacks), `summary.csv`, `summary.md` |
-| `logs/` | full estimator output of every run |
+| `logs/` | full estimator output of every run, incl. `ntru_calibration.log` and `extra_*.log` |
 | `results_352ddaf/`, `logs_352ddaf/` | PQKryvos hiding at the authors' estimator commit |
 
 ## Translation rules
@@ -47,7 +49,7 @@ up to the full lattice dimension reaches the bound.
 python -m venv venv && . venv/bin/activate && pip install passagemath-standard matplotlib
 ./reproduce.sh
 ```
-A full run takes about 3 hours on two cores.
+A full run takes about 4 hours on two cores. The `afgkr_sigma` scan uses the primal uSVP attack only; the point log2(sigma) = 9 under MATZOV in its output is an optimiser artefact (beta = 782) and should be ignored.
 
 ## Paper
 
