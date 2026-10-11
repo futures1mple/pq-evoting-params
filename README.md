@@ -53,8 +53,8 @@ A full run takes about 4 hours on two cores. The `afgkr_sigma` scan varies secre
 
 ## Paper
 
-J. Alizadeh, "How Secure Are Post-Quantum E-Voting Parameters? A Uniform
-Re-Estimation of Published Lattice-Based Schemes", manuscript, 2026.
+J. Alizadeh, "Uniform Re-Estimation of Security Parameters in Lattice-Based
+Post-Quantum E-Voting Schemes", manuscript, 2026.
 
 ## License
 
